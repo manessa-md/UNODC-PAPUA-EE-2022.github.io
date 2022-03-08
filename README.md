@@ -1,3 +1,32 @@
+# Dasar Google Earth Engine
+
+
+## Dasar Java Script
+
+
+## Dasar Coding di Google Earth Engine
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Google Earth Engine untuk Monitoring Hutan
 
 You can use the [editor on GitHub](https://github.com/manessa-md/UNODC-EE-2022.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
