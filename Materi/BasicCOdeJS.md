@@ -14,10 +14,17 @@ def
 // comment 
 sensitifitas dalam membuat nama variable
 aturan main dalam membuat nama variable
-
 ```
 
 
+```
+var link = '86836482971a35a5e735a17e93c23272';
+Export.table.toDrive({
+  collection: ee.FeatureCollection([ee.Feature(null, stats)]),
+  description: 'exported_stats_demo_' + link,
+  fileFormat: 'CSV'
+})
+```
 
 ## 1.4. Tipe data dalam Koding 
 
