@@ -1,3 +1,52 @@
+# 1. Dasar JavaScript
+
+
+## 1.2. Apa itu JavaScript
+
+
+
+## 1.3. Dasar Koding di Java Script
+
+```
+var 
+print 
+def
+// comment 
+sensitifitas dalam membuat nama variable
+aturan main dalam membuat nama variable
+
+```
+
+
+
+## 1.4. Tipe data dalam Koding 
+
+```
+Object
+Date
+Array
+String
+Number
+Boolean
+```
+
+### 1.4.1. Object
+
+
+### 1.4.2. Date 
+
+
+### 1.4.3. Array
+
+
+### 1.4.4. String 
+
+
+### 1.4.5. Number 
+
+
+### 1.4.6. Boolean
+
 
 
 
