@@ -3,7 +3,7 @@
 
 ## 1.2. Apa itu JavaScript
 
-
+Javascript adalah 
 
 ## 1.3. Dasar Koding di Java Script
 
