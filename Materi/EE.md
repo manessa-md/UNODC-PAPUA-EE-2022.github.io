@@ -3,7 +3,9 @@
 
 ## 1.1. Penerapan proses _Thresholding_ dan _Export_ data Raster pada Google Earth Engine
 
-Proses _Thresholding_ menjadi
+_Thresholding_ merupakan salah satu metode segmentasi citra di mana prosesnya didasarkan pada perbedaan derajat keabuan citra. Proses ini menjadi salah satu aspek penting dalam pengolahan data citra satelit penginderaan jauh. Hal tersebut dapat menjadikan citra tersegmentasi sehingga memungkinkan terbagi atas beberapa kelas atau bahkan menghilangkan beberapa nilai piksel pada citra yang tidak di inginkan. 
+Selain melakukan _threshold_, Platform Google Earth Engine juga memungkinkan adalah proses _export_ data baik raster maupun vektor. Proses _export_ ini memungkinkan untuk memilih tempat penyimpanan, seperti: Google Drive, Asset Google Earth Engine, atau Fasilitas Cloud Lainnya. Karena hal tersebut harapannya dapat terjadi kemudahan dalam transfer data.
+Pada Google Earth Engine (GEE) proses _threshold_ dan _Export_ data Raster dapat dilakukan dengan beberapa langkah berikut ini:
 
 ### 1.1.1. Proses _Thresholding_
 
@@ -125,6 +127,8 @@ Export.image.toDrive({
 ```
 
 ## 1.2. Penerapan Algoritma Indeks Vegetasi untuk Data Citra Satelit Sentinel-2 dan Landsat-8 pada Google Earth Engine
+
+
 
 ### 1.2.1. Indeks Vegetasi Pada Citra Sentinel-2
 
@@ -300,3 +304,4 @@ Map.addLayer(Sebelum, {min:-30,max:0}, 'Sebelum');
 Map.addLayer(Sesudah, {min:-30,max:0}, 'Sesudah');
 Map.addLayer(Ambang_Perbedaan.updateMask(Ambang_Perbedaan), Deforestasi,'Deforestasi');
 ```
+Terima Kasih
