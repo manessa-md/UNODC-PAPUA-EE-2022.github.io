@@ -3,7 +3,7 @@
 
 ## 1.1. Penerapan proses _Thresholding_ dan _Export_ data Raster pada Google Earth Engine
 
-
+Proses _Thresholding_ menjadi
 
 ### 1.1.1. Proses _Thresholding_
 
@@ -78,6 +78,8 @@ var dataset = ee.ImageCollection('LANDSAT/LC08/C01/T1_SR')//.filterBounds(table.
 
 var dataset1 = dataset.clip(table);
 
+Map.addLayer(dataset1);
+
 var visParams = {
   bands: ['B4', 'B3', 'B2'],
   min: 0,
@@ -85,14 +87,13 @@ var visParams = {
   gamma: 1.4,
 };
 Map.centerObject(table, 13.4);
-Map.addLayer(dataset.clip(table), visParams, 'Lokasi 1, Areal Perambahan');
+Map.addLayer(dataset1, visParams, 'Lokasi 1, Areal Perambahan');
 
 
 var sampel = ee.FeatureCollection([Non,
   Hutan]);
 
 var bands = ['B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B10', 'B11'];
- 
 
 var label = 'lc';
 
@@ -104,17 +105,9 @@ var training = dataset1.select(bands).sampleRegions({
 
 var trained = ee.Classifier.smileRandomForest(100, 2).train(training, label, bands);
 
-for(var i = 0; i < 1; i++) {var classified = dataset1.select(bands).classify(trained);}
+var classified = dataset1.select(bands).classify(trained);
 
-// Define a boxcar or low-pass kernel.
-var boxcar = ee.Kernel.square({
-  radius: 0.5, units: 'pixels', magnitude: 1
-});
-
-// Smooth the image by convolving with the boxcar kernel.
-var smooth = classified.convolve(boxcar);
-
-Map.addLayer(smooth,{min: 0, max: 1, palette: ['black', 'green']},
+Map.addLayer(classified,{min: 0, max: 1, palette: ['black', 'green']},
              'classification');
 ```
 
@@ -131,59 +124,179 @@ Export.image.toDrive({
 });
 ```
 
-## 1.2. Penerapan Algoritma Indeks Vegetasi untuk Data Citra Satelit Landsat dan Sentinel-2 pada Google Earth Engine
+## 1.2. Penerapan Algoritma Indeks Vegetasi untuk Data Citra Satelit Sentinel-2 dan Landsat-8 pada Google Earth Engine
 
-### 1.2.1. Indeks Vegetasi Pada Citra Landsat-8
-
-```
-var 
-print 
-def
-// comment 
-sensitifitas dalam membuat nama variable
-aturan main dalam membuat nama variable
-```
-
-### 1.2.2. Indeks Vegetasi Pada Citra Sentinel-2
-
+### 1.2.1. Indeks Vegetasi Pada Citra Sentinel-2
 
 ```
-var 
-print 
-def
-// comment 
-sensitifitas dalam membuat nama variable
-aturan main dalam membuat nama variable
+var table = 
+    /* color: #d63000 */
+    /* shown: false */
+    /* displayProperties: [
+      {
+        "type": "rectangle"
+      }
+    ] */
+    ee.Geometry.Polygon(
+        [[[140.6741602588889, -2.9164249722345037],
+          [140.6741602588889, -3.0048840044101346],
+          [140.79260660898652, -3.0048840044101346],
+          [140.79260660898652, -2.9164249722345037]]], null, false);
+          
+//Daerah Kajian
+Map.centerObject(table, 13,5);
+          
+/**
+ * Function to mask clouds using the Sentinel-2 QA band
+ * @param {ee.Image} image Sentinel-2 image
+ * @return {ee.Image} cloud masked Sentinel-2 image
+ */ 
+             
+function maskS2clouds(image) {
+  var qa = image.select('QA60');
+
+  // Bits 10 and 11 are clouds and cirrus, respectively.
+  var cloudBitMask = 1 << 10;
+  var cirrusBitMask = 1 << 11;
+
+  // Both flags should be set to zero, indicating clear conditions.
+  var mask = qa.bitwiseAnd(cloudBitMask).eq(0)
+      .and(qa.bitwiseAnd(cirrusBitMask).eq(0));
+
+  return image.updateMask(mask).divide(10000);}
+
+var dataset = ee.ImageCollection('COPERNICUS/S2_SR')
+                  .filterDate('2020-01-11', '2020-07-20')
+                  .filterBounds(table)
+                  .filter(ee.Filter.lt('CLOUDY_PIXEL_PERCENTAGE', 20))
+                  .map(maskS2clouds).median();
+print(dataset);
+
+//menghitung EVI
+var dataset1 = dataset.clip(table);
+var evi =dataset1.expression(
+    '2.5 * ((NIR-RED) / (NIR +6 * RED -7.5* BLUE))', {
+      'NIR':dataset1.select('B8'),
+      'RED':dataset1.select('B4'),
+      'BLUE':dataset1.select('B2')
+    });
+
+evi = evi.multiply(0.3);
+var meanEVI2020 = evi.rename('EVI');
+
+var colorizedVis = {
+  min: 0.0,
+  max: 1.0,
+  palette: [
+    'FFFFFF', 'CE7E45', 'DF923D', 'F1B555', 'FCD163', '99B718', '74A901',
+    '66A000', '529400', '3E8601', '207401', '056201', '004C00', '023B01',
+    '012E01', '011D01', '011301'
+  ],
+};
+
+Map.addLayer(meanEVI2020, colorizedVis, 'EVI');
 ```
+
+### 1.2.2. Indeks Vegetasi Pada Citra Landsat-8 
 
 
 ```
-var link = '86836482971a35a5e735a17e93c23272';
-Export.table.toDrive({
-  collection: ee.FeatureCollection([ee.Feature(null, stats)]),
-  description: 'exported_stats_demo_' + link,
-  fileFormat: 'CSV'
-})
+var table = 
+    /* color: #d63000 */
+    /* shown: false */
+    /* displayProperties: [
+      {
+        "type": "rectangle"
+      }
+    ] */
+    ee.Geometry.Polygon(
+        [[[140.6741602588889, -2.9164249722345037],
+          [140.6741602588889, -3.0048840044101346],
+          [140.79260660898652, -3.0048840044101346],
+          [140.79260660898652, -2.9164249722345037]]], null, false);
+//Daerah Kajian
+Map.centerObject(table, 13,5);
+
+//cloud masking
+/**
+ * Function to mask clouds based on the pixel_qa band of Landsat 8 SR data.
+ * @param {ee.Image} image input Landsat 8 SR image
+ * @return {ee.Image} cloudmasked Landsat 8 image
+ */
+ // Fungsi scaling factor
+var multiply = function(image){
+  // multply image
+  var img = image.multiply(0.0001);
+  return img.set('system:time_start',image.get('system:time_start')) ;
+};
+function maskL8sr(image) {
+  // Bits 3 and 5 are cloud shadow and cloud, respectively.
+  var cloudShadowBitMask = (1 << 3);
+  var cloudsBitMask = (1 << 5);
+  // Get the pixel QA band.
+  var qa = image.select('pixel_qa');
+  // Both flags should be set to zero, indicating clear conditions.
+  var mask = qa.bitwiseAnd(cloudShadowBitMask).eq(0)
+                 .and(qa.bitwiseAnd(cloudsBitMask).eq(0));
+  return image.updateMask(mask);
+}
+var dataset = ee.ImageCollection('LANDSAT/LC08/C01/T1_SR')
+                  .filterDate('2019-01-01', '2020-12-31')
+                  .filterMetadata('CLOUD_COVER','less_than', 10)
+                  .map(maskL8sr).median();
+
+var visParams = {
+  bands: ['B4', 'B3', 'B2'],
+  min: 0,
+  max: 3000,
+  gamma: 1.4,
+};
+
+//menghitung NDVI
+var ndvi = dataset.expression( "(NIR - Red) / (NIR + Red)", 
+          { NIR: dataset.select("B5"), 
+          Red: dataset.select("B4") });
+var ndvi = dataset.normalizedDifference(['B5','B4']);
+
+var meanNDVI2020 = ndvi.rename('NDVI');
+
+var colorizedVis = {
+  min: 0.0,
+  max: 1.0,
+  palette: [
+    'FFFFFF', 'CE7E45', 'DF923D', 'F1B555', 'FCD163', '99B718', '74A901',
+    '66A000', '529400', '3E8601', '207401', '056201', '004C00', '023B01',
+    '012E01', '011D01', '011301'
+  ],
+};
+
+Map.addLayer(meanNDVI2020.clip(table), colorizedVis, 'NDVI');
 ```
 
 ## 1.3. Penerapan data Radar (Sentinel-1) untuk Mengamati Penggundulan Hutan pada Google Earth Engine
 
 ```
-Object
-Date
-Array
-String
-Number
-Boolean
-```
+// Menampilkan Citra Sentinel-1 dengan VV Polarisation
+var s1 = ee.ImageCollection('COPERNICUS/S1_GRD')
+.filter(ee.Filter.listContains('transmitterReceiverPolarisation', 'VV'))
+.filter(ee.Filter.eq('instrumentMode', 'IW'))
+.filterBounds(roi)
+.select(['VV']);
 
-## 1.4. Visualisasi Diagram _Time Series_ pada Google Earth Engine
+// Waktu Sebelum dan Sesudah Kejadian
+var Sebelum = s1.filterDate('2018-06-01', '2018-08-03').mosaic().clip(roi);
+var Sesudah = s1.filterDate('2019-06-01', '2019-08-03').mosaic().clip(roi);
 
-```
-Object
-Date
-Array
-String
-Number
-Boolean
+// Menentukan ambang batas penghalusan area banjir
+var Radius_Penghalusan = 10; 
+var Ambang_atas = -3;
+var Beda_Kehalusan = Sebelum.focal_median(Radius_Penghalusan)
+                            .subtract(Sesudah.focal_median(Radius_Penghalusan));
+var Ambang_Perbedaan = Beda_Kehalusan.lt(Ambang_atas);
+
+// Menampilkan Hasil
+Map.centerObject(roi, 13);
+Map.addLayer(Sebelum, {min:-30,max:0}, 'Sebelum');
+Map.addLayer(Sesudah, {min:-30,max:0}, 'Sesudah');
+Map.addLayer(Ambang_Perbedaan.updateMask(Ambang_Perbedaan), Deforestasi,'Deforestasi');
 ```
