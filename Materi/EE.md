@@ -72,7 +72,7 @@ function maskL8sr(image) {
 }
 
 var dataset = ee.ImageCollection('LANDSAT/LC08/C01/T1_SR')//.filterBounds(table.geometry())
-                  .filterDate('2020-01-01', '2021-05-20')
+                  .filterDate('2020-01-01', '2021-05-20').filterMetadata('CLOUD_COVER','less_than', 10)
                   .map(maskL8sr)
                   .median();
 
