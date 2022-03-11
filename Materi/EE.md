@@ -9,7 +9,7 @@ Pada Google Earth Engine (GEE) proses _threshold_ dan _Export_ data Raster dapat
 
 ### 1.1.1. Proses _Thresholding_
 
-Langkah pertama dalam proses threholding yakni menentukan wilayah yang akan di amati dengan membuat _geometry polygon_ di wilayah tersebut. 
+- Langkah pertama dalam proses threholding yakni menentukan wilayah yang akan di amati dengan membuat _geometry polygon_ di wilayah tersebut. 
 
 ```
 var AOILP = 
@@ -59,7 +59,7 @@ var AOILP =
         });
 ```
 
-Langkah kedua sangat terkait dengan proses threshold yakni memilih produk citra satelit, _filterring_ waktu perekaman, penentuan tingkat persentase tutupan awan, _masking_ awan, hingga pemotongan citra sesuai dengan wilayah kajian. 
+- Langkah kedua sangat terkait dengan proses threshold yakni memilih produk citra satelit, _filtering_ waktu perekaman, penentuan tingkat persentase tutupan awan, _masking_ awan, hingga pemotongan citra sesuai dengan wilayah kajian. 
 
 ```
 /**
@@ -89,7 +89,7 @@ var dataset1 = dataset.clip(AOILP);
 Map.addLayer(dataset1);
 ```
 
-Langkah ketiga adalah komposit citra agar citra yang ditampilkan sesuai dengan keadaan visual di lapangan.
+- Langkah ketiga adalah komposit citra agar citra yang ditampilkan sesuai dengan keadaan visual di lapangan.
 
 ```
 var visParams = {
@@ -101,7 +101,7 @@ var visParams = {
 Map.centerObject(AOILP,13.4);
 Map.addLayer(dataset1, visParams, 'Lokasi 1, Areal Perambahan');
 ```
-Langkah keempat adalah proses klasifikasi dengan penentuan sampel untuk membuat referemsi ambang nilai _pixel_. Hasil klasifikasi kemudian di visualisasikan dengan warna tertentu agar terlihat perbedaan antar kelasnya.
+- Langkah terakhir adalah proses klasifikasi dengan penentuan sampel untuk membuat referemsi ambang nilai _pixel_. Hasil klasifikasi kemudian di visualisasikan dengan warna tertentu agar terlihat perbedaan antar kelasnya.
 
 ```
 var sampel = ee.FeatureCollection([Non,
@@ -148,7 +148,7 @@ Keterangan : R = Panjang Gelombang
 
 ### 1.2.1. Indeks Vegetasi Pada Citra Sentinel-2
 Contoh pertama adalah proses penerapan algoritma indeks vegetasi (EVI) pada citra sentinel-2. 
-- Langkah pertama adalah penentuan 
+- Langkah pertama adalah penentuan wilayah yang akan diamati.
 ```
 var table = 
     /* color: #d63000 */
@@ -167,7 +167,7 @@ var table =
 //Daerah Kajian
 Map.centerObject(table, 13,5);
  ``` 
-    
+ - Langkah kedua adalah melakukan _filtering_ citra satelit, waktu perekaman, persentase awan, masking awan dan pemotongan citra.
     
  ```
 /**
@@ -196,6 +196,7 @@ var dataset = ee.ImageCollection('COPERNICUS/S2_SR')
                   .map(maskS2clouds).median();
 print(dataset);
 ```
+- Langkah terakhir adalah proses penerapan algoritma EVI dan visualisasi hasil.
 
 ```
 //menghitung EVI
@@ -226,6 +227,8 @@ Map.addLayer(meanEVI2020, colorizedVis, 'EVI');
 ### 1.2.2. Indeks Vegetasi Pada Citra Landsat-8 
 Contoh selanjutnya adalah proses penerapan algoritma indeks vegetasi (NDVI) pada citra Landsat-8. Dimana penerapan algoritma NDVI sangat familiar digunakan pada citra satelit Landsat-8 karena relatif lebih mudah dalam penerapannya.
 
+- Langkah pertama adalah penentuan wilayah yang akan diamati.
+
 ```
 var table = 
     /* color: #d63000 */
@@ -243,6 +246,7 @@ var table =
 //Daerah Kajian
 Map.centerObject(table, 13,5);
 ```
+- Langkah kedua adalah melakukan _filtering_ citra satelit, waktu perekaman, persentase awan, masking awan dan pemotongan citra.
 
 ```
 //cloud masking
@@ -274,6 +278,7 @@ var dataset = ee.ImageCollection('LANDSAT/LC08/C01/T1_SR')
                   .map(maskL8sr).median();
 print(dataset);
 ```
+- Langkah terakhir adalah proses penerapan algoritma NDVI dan visualisasi hasil.
 
 ```
 var visParams = {
@@ -306,6 +311,29 @@ Map.addLayer(meanNDVI2020.clip(table), colorizedVis, 'NDVI');
 
 ## 1.3. Penerapan data Radar (Sentinel-1) untuk Mengamati Penggundulan Hutan pada Google Earth Engine
 
+Pengamatan area yang terjadi penggundulan hutan dapat dilakukan dengan memanfaatkan data Radar (Sentinel-1). Konsep dasarnya adalah mengacu pada perubahan nilai band setiap raster dengan membandingkan secara temporal citra, sehingga dihasilkan poligon deforestasi secara spasial. Citra yang digunakan merupakan citra yang direkam pada periode kemarau dan kemudian dibandingkan. Citra Sentinel 1 menunjukan terrain, basah/kering permukaan dan _landuse_. Apabila nilai raster semakin tinggi/mengubah warna menjadi terang berarti ada perubahan landuse sebagai indikasi adanya deforestasi.
+
+- Langkah pertama adalah penentuan wilayah yang akan diamati.
+
+```
+var aoi = 
+    /* color: #d63000 */
+    /* shown: false */
+    /* displayProperties: [
+      {
+        "type": "rectangle"
+      }
+    ] */
+    ee.Geometry.Polygon(
+        [[[140.6741602588889, -2.9164249722345037],
+          [140.6741602588889, -3.0048840044101346],
+          [140.79260660898652, -3.0048840044101346],
+          [140.79260660898652, -2.9164249722345037]]], null, false);
+//Daerah Kajian
+Map.centerObject(aoi, 13,5);
+```
+- Langkah kedua adalah melakukan _filtering_ citra satelit, waktu perekaman, penentuan polarisasi, dan mosaic citra.
+
 ```
 // Menampilkan Citra Sentinel-1 dengan VV Polarisation
 var s1 = ee.ImageCollection('COPERNICUS/S1_GRD')
@@ -318,16 +346,17 @@ var s1 = ee.ImageCollection('COPERNICUS/S1_GRD')
 var Sebelum = s1.filterDate('2018-06-01', '2018-08-03').mosaic().clip(roi);
 var Sesudah = s1.filterDate('2019-06-01', '2019-08-03').mosaic().clip(roi);
 ```
+- Langkah ketiga adalah menentukan batas penghalusan area deforestasi.
 
 ```
-// Menentukan ambang batas penghalusan area banjir
+// Menentukan ambang batas penghalusan area
 var Radius_Penghalusan = 10; 
 var Ambang_atas = -3;
 var Beda_Kehalusan = Sebelum.focal_median(Radius_Penghalusan)
                             .subtract(Sesudah.focal_median(Radius_Penghalusan));
 var Ambang_Perbedaan = Beda_Kehalusan.lt(Ambang_atas);
 ```
-
+Langkah terakhir adalah proses menampilkan hasil berupa informasi area deforestasi.
 ```
 // Menampilkan Hasil
 Map.centerObject(roi, 13);
