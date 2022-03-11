@@ -1,7 +1,7 @@
 ### Google Earth Engine Interface
 
 Google earth engine memiliki tampilan yang sangat sederhana dengan fungsi yang sangat beragam. Pengolahan data secara spasial maupun statistik dapat dilakukan pada aplikasi ini. 
-[Gambar 1. Interface Google Earth Engine] (Materi/EEInterfacebaru.png)
+[Gambar 1. Interface Google Earth Engine](Materi/EEInterfacebaru.png)
 
 
 
