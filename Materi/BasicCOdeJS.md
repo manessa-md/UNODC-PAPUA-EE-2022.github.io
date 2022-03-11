@@ -28,32 +28,30 @@ Export.table.toDrive({
 ## 1.3. Jenis jenis data dalam Javascript 
 Dalam mengenali jenis data javascript dapat langsung mengenali jenis data yang dituliskan (_dynamic typing_), tidak seperti pada bahasa C, C++, Java, dsb yang harus menuliskan tipe data pada saat pembuatan variabel (_static typing_). Berikut merupakan beberapa jenis data yang digunakan dalam bahasa javascript
 
-1. String (teks)
-2. Integer atau Number (bilangan bulat)
-3. Float (bilangan Pecahan)
-4. Boolean
-5. Object
-
-```
-Object
-Date
-Array
-String
-Number
-Boolean
-```
+1. Object
+2. Date
+3. Array
+4. String (teks)
+5. Integer atau Number (bilangan bulat)
+6. Boolean
+7. Float (bilangan Pecahan)
 
 ### 1.3.1. Object
-
+Jenis data object merupakan 
 
 ### 1.3.2. Date 
 
 
 ### 1.3.3. Array
-
+Jenis data array merupakan jenis data yang 
 
 ### 1.3.4. String 
-String merupakan jenis data berupa teks
+String merupakan jenis data berupa teks atau tulisan, sebagai berikut.
+
+```
+//Contoh
+var indonesia = "papua";
+```
 
 ### 1.5.5. Number 
 
