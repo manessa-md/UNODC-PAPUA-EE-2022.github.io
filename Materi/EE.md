@@ -3,14 +3,16 @@
 
 ## 1.1. Penerapan proses _Thresholding_ dan _Export_ data Raster pada Google Earth Engine
 
-_Thresholding_ merupakan salah satu metode segmentasi citra di mana prosesnya didasarkan pada perbedaan derajat keabuan citra. Proses ini menjadi salah satu aspek penting dalam pengolahan data citra satelit penginderaan jauh. Hal tersebut dapat menjadikan citra tersegmentasi sehingga memungkinkan terbagi atas beberapa kelas atau bahkan menghilangkan beberapa nilai piksel pada citra yang tidak di inginkan. 
-Selain melakukan _threshold_, Platform Google Earth Engine juga memungkinkan adalah proses _export_ data baik raster maupun vektor. Proses _export_ ini memungkinkan untuk memilih tempat penyimpanan, seperti: Google Drive, Asset Google Earth Engine, atau Fasilitas Cloud Lainnya. Karena hal tersebut harapannya dapat terjadi kemudahan dalam transfer data.
+_Thresholding_ merupakan salah satu metode segmentasi citra di mana prosesnya didasarkan pada perbedaan derajat keabuan citra. Proses ini menjadi salah satu aspek penting dalam pengolahan data citra satelit penginderaan jauh. Hal tersebut dapat menjadikan citra tersegmentasi dan memungkinkan terbagi atas beberapa kelas atau bahkan menghilangkan beberapa nilai piksel pada citra yang tidak di inginkan. 
+Selain melakukan _threshold_, Platform Google Earth Engine juga memungkinkan adalah proses _export_ data baik raster, vektor maupun video. Proses _export_ ini memungkinkan untuk memilih tempat penyimpanan, seperti: Google Drive, Asset Google Earth Engine, atau Fasilitas Cloud Lainnya. Karena hal tersebut harapannya dapat terjadi kemudahan dalam transfer data.
 Pada Google Earth Engine (GEE) proses _threshold_ dan _Export_ data Raster dapat dilakukan dengan beberapa langkah berikut ini:
 
 ### 1.1.1. Proses _Thresholding_
 
+Langkah pertama dalam proses threholding yakni menentukan wilayah yang akan di amati dengan membuat _geometry polygon_ di wilayah tersebut. 
+
 ```
-var table = 
+var AOILP = 
     /* color: #d63000 */
     /* shown: false */
     /* displayProperties: [
@@ -55,7 +57,11 @@ var table =
           "lc": 0,
           "system:index": "0"
         });
-        
+```
+
+Langkah kedua sangat terkait dengan proses threshold yakni memilih produk citra satelit, _filterring_ waktu perekaman, penentuan tingkat persentase tutupan awan, _masking_ awan, hingga pemotongan citra sesuai dengan wilayah kajian. 
+
+```
 /**
  * Function to mask clouds based on the pixel_qa band of Landsat 8 SR data.
  * @param {ee.Image} image input Landsat 8 SR image
@@ -73,25 +79,31 @@ function maskL8sr(image) {
   return image.updateMask(mask);
 }
 
-var dataset = ee.ImageCollection('LANDSAT/LC08/C01/T1_SR')//.filterBounds(table.geometry())
+var dataset = ee.ImageCollection('LANDSAT/LC08/C01/T1_SR')//.filterBounds(AOILP.geometry())
                   .filterDate('2020-01-01', '2021-05-20').filterMetadata('CLOUD_COVER','less_than', 10)
                   .map(maskL8sr)
                   .median();
 
-var dataset1 = dataset.clip(table);
+var dataset1 = dataset.clip(AOILP);
 
 Map.addLayer(dataset1);
+```
 
+Langkah ketiga adalah komposit citra agar citra yang ditampilkan sesuai dengan keadaan visual di lapangan.
+
+```
 var visParams = {
   bands: ['B4', 'B3', 'B2'],
   min: 0,
   max: 3000,
   gamma: 1.4,
 };
-Map.centerObject(table, 13.4);
+Map.centerObject(AOILP,13.4);
 Map.addLayer(dataset1, visParams, 'Lokasi 1, Areal Perambahan');
+```
+Langkah keempat adalah proses klasifikasi dengan penentuan sampel untuk membuat referemsi ambang nilai _pixel_. Hasil klasifikasi kemudian di visualisasikan dengan warna tertentu agar terlihat perbedaan antar kelasnya.
 
-
+```
 var sampel = ee.FeatureCollection([Non,
   Hutan]);
 
@@ -115,23 +127,28 @@ Map.addLayer(classified,{min: 0, max: 1, palette: ['black', 'green']},
 
 ### 1.1.2. Proses _Export_ data Raster
 
-- Export to Drive
+Proses _Export_ dilakukan setelah dilakukan langkah penentuan citra serta pengolahan. Hasil _export_ umumnya akan di simpan pada Google Drive pemilik akun.
 ```
 Export.image.toDrive({
   image: smooth,
   description: 'Klasifikasi di Lokasi Pembalakan',
   scale: 30,
-  region: table,
+  region: AOILP,
   maxPixels: 1e12
 });
 ```
 
 ## 1.2. Penerapan Algoritma Indeks Vegetasi untuk Data Citra Satelit Sentinel-2 dan Landsat-8 pada Google Earth Engine
 
+Pada platform Google Earth Engine terdapat dukungan penerapan algoritma sebagai bagian dari pengolahan dan analisis data citra satelit untuk menunjukan model yang sesuai dengan kebutuhan. Sampai saat ini telah terdapat banyak algoritma yang telah dikembangkan oleh peneliti. Algoritma yang paling baik dapat diukur dari tingkat akurasi yang di hasilkan. Berikut beberapa algoritma indeks vegetasi yang banyak digunakan untuk beberapa kebutuhan analisis. 
 
+![Capture](https://user-images.githubusercontent.com/69818715/157801340-a763455d-9c81-43bf-8b09-f81e4316013d.JPG)
+
+Keterangan : R = Panjang Gelombang
 
 ### 1.2.1. Indeks Vegetasi Pada Citra Sentinel-2
-
+Contoh pertama adalah proses penerapan algoritma indeks vegetasi (EVI) pada citra sentinel-2. 
+- Langkah pertama adalah penentuan 
 ```
 var table = 
     /* color: #d63000 */
@@ -149,7 +166,10 @@ var table =
           
 //Daerah Kajian
 Map.centerObject(table, 13,5);
-          
+ ``` 
+    
+    
+ ```
 /**
  * Function to mask clouds using the Sentinel-2 QA band
  * @param {ee.Image} image Sentinel-2 image
@@ -175,7 +195,9 @@ var dataset = ee.ImageCollection('COPERNICUS/S2_SR')
                   .filter(ee.Filter.lt('CLOUDY_PIXEL_PERCENTAGE', 20))
                   .map(maskS2clouds).median();
 print(dataset);
+```
 
+```
 //menghitung EVI
 var dataset1 = dataset.clip(table);
 var evi =dataset1.expression(
@@ -202,7 +224,7 @@ Map.addLayer(meanEVI2020, colorizedVis, 'EVI');
 ```
 
 ### 1.2.2. Indeks Vegetasi Pada Citra Landsat-8 
-
+Contoh selanjutnya adalah proses penerapan algoritma indeks vegetasi (NDVI) pada citra Landsat-8. Dimana penerapan algoritma NDVI sangat familiar digunakan pada citra satelit Landsat-8 karena relatif lebih mudah dalam penerapannya.
 
 ```
 var table = 
@@ -220,7 +242,9 @@ var table =
           [140.79260660898652, -2.9164249722345037]]], null, false);
 //Daerah Kajian
 Map.centerObject(table, 13,5);
+```
 
+```
 //cloud masking
 /**
  * Function to mask clouds based on the pixel_qa band of Landsat 8 SR data.
@@ -248,7 +272,10 @@ var dataset = ee.ImageCollection('LANDSAT/LC08/C01/T1_SR')
                   .filterDate('2019-01-01', '2020-12-31')
                   .filterMetadata('CLOUD_COVER','less_than', 10)
                   .map(maskL8sr).median();
+print(dataset);
+```
 
+```
 var visParams = {
   bands: ['B4', 'B3', 'B2'],
   min: 0,
@@ -290,14 +317,18 @@ var s1 = ee.ImageCollection('COPERNICUS/S1_GRD')
 // Waktu Sebelum dan Sesudah Kejadian
 var Sebelum = s1.filterDate('2018-06-01', '2018-08-03').mosaic().clip(roi);
 var Sesudah = s1.filterDate('2019-06-01', '2019-08-03').mosaic().clip(roi);
+```
 
+```
 // Menentukan ambang batas penghalusan area banjir
 var Radius_Penghalusan = 10; 
 var Ambang_atas = -3;
 var Beda_Kehalusan = Sebelum.focal_median(Radius_Penghalusan)
                             .subtract(Sesudah.focal_median(Radius_Penghalusan));
 var Ambang_Perbedaan = Beda_Kehalusan.lt(Ambang_atas);
+```
 
+```
 // Menampilkan Hasil
 Map.centerObject(roi, 13);
 Map.addLayer(Sebelum, {min:-30,max:0}, 'Sebelum');
