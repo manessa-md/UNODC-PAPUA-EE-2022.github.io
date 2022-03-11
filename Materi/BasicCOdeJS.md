@@ -6,8 +6,8 @@ Javascript adalah sebuah bahasa pemrograman atau perintah pada komputer yang pad
 ## 1.2. Dasar _Coding_ di JavaScript
 Sama seperti bahasa dalam bahasa Javascript juga terdapat beberapa kata yang digunakan untuk melakukan sesuatu. Berikut merupakan beberapa _coding_ atau kata dasar yang sering digunakan untuk mengiring perintah lanjutan.
 
-1. var
-Merupakan _coding_ yang digunakan untuk mendefinisikan sebuah variabel. Variabel juga merupakan wadah untuk menyimpan data (menyimpan nilai data), sebagai berikut. 
+### 1. var
+Merupakan _coding_ yang digunakan untuk mendefinisikan sebuah variabel. Pendefinisian variabel dalam javascript dapat dilakukan menggunakan var, let, dan const. let dan const digunakan dalam mendefinisikan variabel yang lebih detail. Apabila variabel general maka gunakan **const** sedangkan apabila variabel dapat berubah maka dapat menggunakan **let**. Variabel juga merupakan wadah untuk menyimpan data (menyimpan nilai data), sebagai berikut. 
 ```
 var papua = "Kota Jayapura"
 
@@ -16,19 +16,23 @@ var papua = "Kota Jayapura"
 let kabupatenjayapura = "Sentani",
 kabupatenjayawijaya = "Wamena",
 kabupatenintanjaya = "Sugapa";
+
+//penggunaan const dapat digunakan untuk sesuatu yang lebih general
+const kota = [
+"Jayapura", 
+"Sentani", 
+"Biak"]
+;
 ```
 
-2. print
+### 2. print
 Merupakan _coding_ yang digunakan untuk mencetak hasil dari variabel, sebagai berikut.
 ```
 var papua = "Kota Jayapura"
-print(papua);
+print(papua); //Hasil akan menunjukkan Kota Jayapura
 ```
 
-3. def
-Merupakan 
-
-4. if
+### 3. if
 Merupakan _coding_ yang digunakan untuk menandai atau menarik sebuah pernyataan dengan sebuah kondisi tertentu, sebagai berikut.
 
 if (condition) {
@@ -41,7 +45,7 @@ if (waktu > 18) {
 }
 ```
 
-5. function
+### 4. function
 _Coding_ ini merupakan perintah untuk menjalankan suatu fungsi tertentu, sebagai berikut.
 ```
 var x = cobaFunction(5, 10);   //Contoh variabel x menggunakan function
@@ -55,12 +59,13 @@ print (x)
 = 50
 ```
 
-6. return
+### 5. return
 Merupakan _coding_ yang digunakan untuk menutup / exit function. Contoh dapat dilihat pada bagian function.
 
 ## 1.2. Penulisan variabel
 Penamaan variabel dalam javascript tidak dapat dilakukan sembarangan seperti menulis dalam word, terdapat beberapa ketentuan yang harus diikuti, sebagai berikut.
-1. Variabel tidak boleh dituliskan dengan menggunakan angka di depannya.
+
+### 1. Variabel tidak boleh dituliskan dengan menggunakan angka di depannya.
 ```
 // salah
 var 123jayapura = "Papua";
@@ -69,12 +74,12 @@ var 123jayapura = "Papua";
 var jayapura123 = "Papua";
 ```
 
-2. Variabel dapat dituliskan mengguankan awalan underscore. 
+### 2. Variabel dapat dituliskan mengguankan awalan underscore. 
 ```
 var _jayapura = "Papua";
 ```
 
-3. Variabel disarankan menggunakan camelCase apabila terdiri dari dua suku kata
+### 3. Variabel disarankan menggunakan camelCase apabila terdiri dari dua suku kata
 ```
 var wonderfulIndonesia = "Wonderfull Papua";
 ```
@@ -102,12 +107,50 @@ Dalam mengenali jenis data javascript dapat langsung mengenali jenis data yang d
 
 ### 1.3.1. Object
 Jenis data object merupakan tipe data yang memiliki lebih dari satu nilai. Perbedaan dengan array terletak pada indeks, dimana object tidak punya indeks tapi nama. Selain itu, pada object dapat memasukan Function dan Array sehingga lebih praktis.
+```
+const jayapura = {provinsi:"Papua", administrasi:"Kota", luas:940, jumlahpenduduk:315.872};
+
+//contoh lain menggunakan enter sehingga lebih mudah dilihat
+
+const person = {
+  provinsi: "Papua",
+  administrasi: "Kota",
+  luas: 940,
+  jumlahpenduduk: 315.872
+};
+```
 
 ### 1.3.2. Date
+Penulisan tanggal pada javascript dapat dilakukan dengan menggunakan struktur **new date()**. Berikut merupakan beberapa bentuk penulisan tanggal yang dapat dilakukan pada bahasa javascript.
+```
+new Date()
+new Date(year, month, day, hours, minutes, seconds, milliseconds)
+new Date(milliseconds)
+new Date(date string)
 
+///contoh
+const d = new Date(2018, 11, 24, 10, 33, 30);
+const d = new Date(2018, 11);
+const d = new Date("October 13, 2014 11:13:00");
+```
 
 ### 1.3.3. Array
-Jenis data array merupakan jenis data yang 
+Jenis data array merupakan jenis data yang memiliki banyak isi. Seperti variabel dengan banyak isi. Array diciptakan untuk mempersingkat variabel tertentu.
+```
+var kota1 = "Jayapura";
+var kota2 = "Sentani";
+var kota3 = "Biak";
+
+//Jika menggunakan kota1, kota2, dan kota3 maka akan terlalu repot dan banyak
+const kota = ["Jayapura", "Sentani", "Biak"];
+
+//atau dapat ditulis secara horizontal
+const kota = [
+"Jayapura", 
+"Sentani", 
+"Biak"]
+;
+```
 
 ### 1.3.4. String 
 String merupakan jenis data berupa teks atau tulisan, sebagai berikut.
@@ -137,8 +180,24 @@ var z = 192e-5;     // 0.00192
 ```
 
 ### 1.4.8 Function
+Function merupakan sebuah fungsi khusus yang dibuat untuk melakukan tugas tertentu seperti menghitung.
+Berikut merupakan rumus dasar function pada javascript.
+```
+function name(parameter1, parameter2, parameter3) {
+  // code to be executed
+}
 
+//contoh
+var x = cobaFunction(5, 10);   //Contoh variabel x menggunakan function
 
+function cobaFunction(a, b) {
+  return a * b;                
+}
+
+print (x)
+
+= 50
+```
 
 
 # Panduan penulisan
