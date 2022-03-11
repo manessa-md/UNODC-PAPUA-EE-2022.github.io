@@ -8,7 +8,6 @@ Sama seperti bahasa dalam bahasa Javascript juga terdapat beberapa kata yang dig
 
 1. var
 Merupakan _coding_ yang digunakan untuk mendefinisikan sebuah variabel. Variabel juga merupakan wadah untuk menyimpan data (menyimpan nilai data), sebagai berikut. 
-
 ```
 var papua = "Kota Jayapura"
 
@@ -32,15 +31,53 @@ Merupakan
 4. if
 Merupakan _coding_ yang digunakan untuk menandai atau menarik sebuah pernyataan dengan sebuah kondisi tertentu, sebagai berikut.
 
+if (condition) {
+  //  block of code to be executed if the condition is true
+}
+
+```
+if (waktu > 18) {
+  ucapan = "Selamat Malam";
+}
+```
+
 5. function
+_Coding_ ini merupakan perintah untuk menjalankan suatu fungsi tertentu, sebagai berikut.
+```
+var x = cobaFunction(5, 10);   //Contoh variabel x menggunakan function
+
+function cobaFunction(a, b) {
+  return a * b;                
+}
+
+print (x)
+
+= 50
+```
 
 6. return
-Merupakan _coding_ yang digunakan 
+Merupakan _coding_ yang digunakan untuk menutup / exit function. Contoh dapat dilihat pada bagian function.
 
-## 1.2. Var
-// (comment) 
-sensitifitas dalam membuat nama variable
-aturan main dalam membuat nama variable
+## 1.2. Penulisan variabel
+Penamaan variabel dalam javascript tidak dapat dilakukan sembarangan seperti menulis dalam word, terdapat beberapa ketentuan yang harus diikuti, sebagai berikut.
+1. Variabel tidak boleh dituliskan dengan menggunakan angka di depannya.
+```
+// salah
+var 123jayapura = "Papua";
+  
+// benar
+var jayapura123 = "Papua";
+```
+
+2. Variabel dapat dituliskan mengguankan awalan underscore. 
+```
+var _jayapura = "Papua";
+```
+
+3. Variabel disarankan menggunakan camelCase apabila terdiri dari dua suku kata
+```
+var wonderfulIndonesia = "Wonderfull Papua";
+```
 
 ```
 var link = '86836482971a35a5e735a17e93c23272';
@@ -66,10 +103,6 @@ Dalam mengenali jenis data javascript dapat langsung mengenali jenis data yang d
 ### 1.3.1. Object
 Jenis data object merupakan tipe data yang memiliki lebih dari satu nilai. Perbedaan dengan array terletak pada indeks, dimana object tidak punya indeks tapi nama. Selain itu, pada object dapat memasukan Function dan Array sehingga lebih praktis.
 
-```
-
-```
-
 ### 1.3.2. Date
 
 
@@ -85,15 +118,65 @@ var indonesia = "papua";
 ```
 
 ### 1.5.5. Number 
-
+Merupakan jenis data berupa bilangan, sebagai berikut
+```
+var indonesia = 1945
+```
 
 ### 1.4.6. Boolean
-
+Merupakan jenis data berupa dengan dua hasil seperti YES / NO, ON / OFF, TRUE / FALSE, BENAR / SALAH.
+```
+Boolean(10 > 9)   //true
+```
 
 ### 1.4.7 Float
-
+Hampir sama dengan jenis data bilangan, namun data float memiliki desimal, sebagai berikut.
+```
+var y = 192e5;      // 19200000
+var z = 192e-5;     // 0.00192
+```
 
 ### 1.4.8 Function
 
 
 
+
+# Panduan penulisan
+
+## Google Earth Engine untuk Monitoring Hutan
+
+You can use the [editor on GitHub](https://github.com/manessa-md/UNODC-EE-2022.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
+### Markdown
+
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+
+```markdown
+Syntax highlighted code block
+
+# Header 1
+## Header 2
+### Header 3
+
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
+```
+
+For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+
+### Jekyll Themes
+
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/manessa-md/UNODC-EE-2022.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
+### Support or Contact
+
+Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
