@@ -1,6 +1,8 @@
 ### Google Earth Engine Interface
 
 Google earth engine memiliki tampilan yang sangat sederhana dengan fungsi yang sangat beragam. Pengolahan data secara spasial maupun statistik dapat dilakukan pada aplikasi ini. 
+[Gambar 1. Interface Google Earth Engine] (Materi/EEInterfacebaru.png)
+
 
 
 The objective of this lab is to give you an introduction to the Google Earth Engine processing environment. By the end of this exercise you will be able to search, find and visualise a broad range of remotely sensed datasets. We will start with single-band imagery - elevation data from the SRTM mission.
