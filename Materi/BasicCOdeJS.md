@@ -2,8 +2,7 @@
 
 
 ## 1.2. Apa itu JavaScript
-
-Javascript adalah 
+Javascript adalah sebuah bahasa pemrograman atau perintah pada komputer yang pada awalnya digunakan untuk pengembangan website. Bahasa javascript diciptakan oleh Brendan Eich yang merupakan karyawan Netscape. Versi awal bahasa javascript hanya dipakai di kalangan Netscapedengan fungsi yang masih terbatas. Pada tahun 1996 JavaScript secara resmi dinamakan sebagai ECMAScript. Bahasa ECMAScript terus dikembangkan sampai akhirnya menjadi JavaScript hingga saat ini. Penggunaan bahasa javascript ini sangat global dan banyak digunakan oleh pengembang software dan website. Pada tahun 2016, 92% website diketahui telah menggunakan JavaScript. Dalam perkembangannya bahasa javascript juga dapat untuk memberi perintah kepada komputer untuk melakukan sebuah perintah seperti mengolah data spasial, melakukan perhitungan algoritma, hingga memvisualiasikan hasil. 
 
 ## 1.3. Dasar Koding di Java Script
 
