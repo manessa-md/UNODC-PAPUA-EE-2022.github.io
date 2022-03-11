@@ -8,6 +8,7 @@ Sama seperti bahasa dalam bahasa Javascript juga terdapat beberapa kata yang dig
 
 1. var
 Merupakan _coding_ yang digunakan untuk mendefinisikan sebuah variabel. Variabel juga merupakan wadah untuk menyimpan data (menyimpan nilai data), sebagai berikut. 
+
 ```
 var papua = "Kota Jayapura"
 
@@ -40,8 +41,6 @@ Merupakan _coding_ yang digunakan
 // (comment) 
 sensitifitas dalam membuat nama variable
 aturan main dalam membuat nama variable
-```
-
 
 ```
 var link = '86836482971a35a5e735a17e93c23272';
@@ -66,6 +65,7 @@ Dalam mengenali jenis data javascript dapat langsung mengenali jenis data yang d
 
 ### 1.3.1. Object
 Jenis data object merupakan tipe data yang memiliki lebih dari satu nilai. Perbedaan dengan array terletak pada indeks, dimana object tidak punya indeks tapi nama. Selain itu, pada object dapat memasukan Function dan Array sehingga lebih praktis.
+
 ```
 
 ```
