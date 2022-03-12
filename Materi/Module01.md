@@ -3,7 +3,7 @@ Module 1a Google Earth Engine Interface
 --------------
 
 Google earth engine memiliki tampilan yang sangat sederhana dengan fungsi yang sangat beragam. Pengolahan data secara spasial maupun statistik dapat dilakukan pada aplikasi ini. 
-[Gambar 1. Interface Google Earth Engine]![EEInterfacebaru](https://user-images.githubusercontent.com/101231694/157897507-8a9028e2-3deb-4e11-9bf0-822a8b0b7255.png)
+[Gambar 1. Interface Google Earth Engine]![EEInterfacebaru](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/17e262178187f37096800b680f461d58dce2d8ef/Image/gee_editor.png)
 
 ## 1. Search box
 Merupakan kotak pencarian seperti pada laman google.com, namun pada aplikasi google earth engine search box digunakan hanya untuk mencari citra satelit. Kata kunci pencarian dapat menggunakan nama citra yang dicari atau fungsi dari citra tersebut.
