@@ -34,7 +34,7 @@ Setelah mengikuti pelatihan ini peserta pelatihan diharapkan mampu:
 3. [Pengenalan GEE]()
 
 **Module Pelatihan dapat diakses pada link berikut:**
-1. [Module 1: Dasar Java Script](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Materi/BasicCOdeJS.md)
+1. [Module 1: Dasar Coding Java Script dan Pengenalan aplikasi Google Earth Engine](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Materi/BasicCOdeJS.md)
 2. [Module 2: Dasar Google Earth Engine]()
 3. [Module 3: Identifikasi vegetasi dan non vegetasi berbasis Index Vegetasi multispectral dan SAR]()
 4. [Module 4: Klasifikasi hutan dan non-hutan dengan metode machine learning]()
