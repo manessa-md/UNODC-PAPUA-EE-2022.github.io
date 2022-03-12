@@ -18,7 +18,14 @@ https://code.earthengine.google.com
 ## Tujuan Pelatihan
 ---------
 
-Tujuan dari pelatihan ini 
+Setelah mengikuti pelatihan ini peserta pelatihan diharapkan mampu: 
+1. Mengunakan antarmuka Editor Kode Google Earth Engine
+2. Mengunakan JavaScript untuk menulis skrip di Antarmuka Editor Kode Google Earth Engine
+3. Memahami skrip sederhana di Google Earth Engine
+4. Mengakses data raster penginderaan jauh dari Google Earth Engine
+5. Menerapkan algoritme indeks vegetasi ke data Sentinel-1 dan Sentinel-2 di Google Earth Engine
+6. Memvisualisasikan plot deret waktu di Google Earth Engine
+7. Membuat aplikasi sederhana di Google Earth Engine
 
 **Materi Presentasi dapat diakses pada link berikut:**
 1. [Dasar Penginderaan Jauh]()
