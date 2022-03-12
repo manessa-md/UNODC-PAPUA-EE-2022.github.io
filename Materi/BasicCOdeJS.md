@@ -199,5 +199,6 @@ print (x)
 = 50
 ```
 
+[JavaScript background](https://developers.google.com/earth-engine/tutorial\_js\_01)
 
 
