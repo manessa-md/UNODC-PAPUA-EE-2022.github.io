@@ -1,4 +1,6 @@
-## Google Earth Engine Interface
+# Pelatihan Google Earth Engine untuk Pengembangan Aplikasi Monitoring Hutan
+Module 1 Google Earth Engine Interface
+--------------
 
 Google earth engine memiliki tampilan yang sangat sederhana dengan fungsi yang sangat beragam. Pengolahan data secara spasial maupun statistik dapat dilakukan pada aplikasi ini. 
 [Gambar 1. Interface Google Earth Engine]![EEInterfacebaru](https://user-images.githubusercontent.com/101231694/157897507-8a9028e2-3deb-4e11-9bf0-822a8b0b7255.png)
