@@ -3,32 +3,42 @@ Module 1a Google Earth Engine Interface
 --------------
 
 Google earth engine memiliki tampilan yang sangat sederhana dengan fungsi yang sangat beragam. Pengolahan data secara spasial maupun statistik dapat dilakukan pada aplikasi ini. 
+
 ![eeInterface](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/gee_editor.png)
+Gambar 1. User Interface Google Earth Engine
 
 ## 1. Search box
 Merupakan kotak pencarian seperti pada laman google.com, namun pada aplikasi google earth engine search box digunakan hanya untuk mencari citra satelit. Kata kunci pencarian dapat menggunakan nama citra yang dicari atau fungsi dari citra tersebut. Berikut merupakan contoh pencarian citra sentinel pada search box.
+
 ![eeInterface](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/searchbox.png)
+Gambar 2. Search Box Google Earth Engine
 
 ## 2. Script, doc dan asset
 ### Script
 Pada bagian script terdapat script _coding_ yang sudah pernah dibuat dan di save, serta terdapat beberapa contoh script aplikasi citra satelit yang dibuat oleh tim google. 
 
 ![eeInterface](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/leftpanel.png)
+Gambar 3. Left Panel Google Earth Engine
+
 Pada bagian ini juga terdapat menu **new** untuk menambahkan reprosit0ry, folder, file. Repository merupakan tempat menyimpan dan folder. Sedangkan folder merupakan kumpulan file. Pembuatan reprository, folder, dan file dapat dilakukan dengan memilih menu **new** kemudian pilih apa yang akan dibuat dan diberikan nama sesuai kebutuhan.
 
 ![eeInterface](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/repositoy.png)
+Gambar 4. Pembuatan Repository Google Earth Engine
 ![eeInterface](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/folder.png)
+Gambar 5. Pembuatan Folder Google Earth Engine
 ![eeInterface](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/file.png)
+Gambar 6. Pembuatan File Google Earth Engine
 
 ### Doc
 Pada bagian doc terdapat instruksi atau contoh dari function. Bagian ini sangat berguna karena terkadang kita tidak dapat menghafal semua script dan fungsinya. 
 
 ### Asset
 Bagian terakhir yaitu asset, yaitu bagian yang memiliki fungsi sebagai tempat untuk mengunggah dan menyimpan file spasial (json, kml, shp dan sebagainya) dari komputer menuju earth engine. Menambahkan asset (file geospasial) dilakukan dengan memilih menu **new** kemudian pilih jenis file yang akan ditambahkan (Csv, Shp, Geotiff, Json). 
-![eeInterface](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/newasset.png)
-![eeInterface](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/shapefileasset.png)
 
-
+![eeInterface](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/4e3cfc96e2fa5b007551a240752ad58fc702402e/Image/eeInterface/newasset.png)
+Gambar 7. New Asset Google Earth Engine
+![eeInterface](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/4e3cfc96e2fa5b007551a240752ad58fc702402e/Image/eeInterface/shapefileasset.png)
+Gambar 8. Menambahkan Shapefile pada Google Earth Engine
 
 ## 3. Code Editor
 Merupakan bagian google earth engine untuk pengguna menuliskan _coding_ atau perintah pengolahan data spasial terhadap komputer google (cloud computing). Pada bagian ini perintah dituliskan dalam bahasa pemrograman javascript. Pada bagian ini juga terdapat tools save untuk menyimpan hasil _coding_, run untuk menjalankan _coding_ dan reset untuk menghapus semua _coding_ yang dibuat.
@@ -48,10 +58,10 @@ Geometry tools merupakan alat dalam google earth engine yang memiliki fungsi unt
 ## 6. Muka Peta
 Merupakan bagian utama dimana hasil dari perintah _coding_ dapat ditampilkan melalui proses visualiasi. Pada bagian muka peta juga terdapat layer dan jenis peta dasar. Layer merupakan lapisan peta yang ditampilkan selain peta dasar sedangkan peta dasar yang disediakan google terdapat 2 jenis yaitu peta satelit dan garis.
 
-![eeInterface](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/Citragaris.png)
-
-![eeInterface](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/Citrasatelit.png)
-
+![eeInterface](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/4e3cfc96e2fa5b007551a240752ad58fc702402e/Image/eeInterface/Citragaris.png)
+Gambar 9. Peta Garis Google Earth Engine
+![eeInterface](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/4e3cfc96e2fa5b007551a240752ad58fc702402e/Image/eeInterface/Citrasatelit.png)
+Gambar 10. Peta Satelit Google Earth Engine
 
 ---------
 
