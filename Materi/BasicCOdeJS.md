@@ -10,19 +10,6 @@ Sama seperti bahasa dalam bahasa Javascript juga terdapat beberapa kata yang dig
 Merupakan _coding_ yang digunakan untuk mendefinisikan sebuah variabel. Pendefinisian variabel dalam javascript dapat dilakukan menggunakan var, let, dan const. let dan const digunakan dalam mendefinisikan variabel yang lebih detail. Apabila variabel general maka gunakan **const** sedangkan apabila variabel dapat berubah maka dapat menggunakan **let**. Variabel juga merupakan wadah untuk menyimpan data (menyimpan nilai data), sebagai berikut. 
 ```
 var papua = "Kota Jayapura"
-
-//atau dapat juga menggunakan let untuk mendefinisikan banyak variabel dalam satu rumus
-
-let kabupatenjayapura = "Sentani",
-kabupatenjayawijaya = "Wamena",
-kabupatenintanjaya = "Sugapa";
-
-//penggunaan const dapat digunakan untuk sesuatu yang lebih general
-const kota = [
-"Jayapura", 
-"Sentani", 
-"Biak"]
-;
 ```
 
 ### 2. print
@@ -34,10 +21,11 @@ print(papua); //Hasil akan menunjukkan Kota Jayapura
 
 ### 3. if
 Merupakan _coding_ yang digunakan untuk menandai atau menarik sebuah pernyataan dengan sebuah kondisi tertentu, sebagai berikut.
-
+```
 if (condition) {
   //  block of code to be executed if the condition is true
 }
+```
 
 ```
 if (waktu > 18) {
