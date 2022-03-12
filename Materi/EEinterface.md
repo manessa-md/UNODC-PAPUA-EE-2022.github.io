@@ -36,5 +36,7 @@ Geometry tools merupakan alat dalam google earth engine yang memiliki fungsi unt
 
 ## 6. Muka Peta
 Merupakan bagian utama dimana hasil dari perintah _coding_ dapat ditampilkan melalui proses visualiasi. Pada bagian muka peta juga terdapat layer dan jenis peta dasar. Layer merupakan lapisan peta yang ditampilkan selain peta dasar sedangkan peta dasar yang disediakan google terdapat 2 jenis yaitu peta satelit dan garis.
+**Tambahkan Screen Shoot perbedaan peta dan satelit**
+
 
 ### Thank you
