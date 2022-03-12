@@ -11,6 +11,7 @@ Penyelesaian latihan ini memerlukan penggunaan browser Google Chrome dan akun Go
 [Earth Engine account registration](https://signup.earthengine.google.com/)
 
 Setelah terdaftar, Anda dapat mengakses Earth Engine environment pada link berikut:
+
 https://code.earthengine.google.com
 
 ------------------------------------------------------------------------
