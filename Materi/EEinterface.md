@@ -43,29 +43,29 @@ Merupakan bagian utama dimana hasil dari perintah _coding_ dapat ditampilkan mel
 
 ---------
 
-## Module 1b Dasar JavaScript
+# Module 1b Dasar JavaScript
 
 
-### 1.1. Apa itu JavaScript
+## 1.1. Apa itu JavaScript
 [Javascript](https://www.javascript.com/) adalah sebuah bahasa pemrograman atau perintah pada komputer yang pada awalnya digunakan untuk pengembangan website. Bahasa javascript diciptakan oleh Brendan Eich yang merupakan karyawan Netscape. Versi awal bahasa javascript hanya dipakai di kalangan Netscapedengan fungsi yang masih terbatas. Pada tahun 1996 JavaScript secara resmi dinamakan sebagai ECMAScript. Bahasa ECMAScript terus dikembangkan sampai akhirnya menjadi JavaScript hingga saat ini. Penggunaan bahasa javascript ini sangat global dan banyak digunakan oleh pengembang software dan website. Pada tahun 2016, 92% website diketahui telah menggunakan JavaScript. JavaScript tergolong bahasa tingkat tinggi. Artinya ia punya aturan penulisan yang menyerupai bahasa manusia. Dengan begitu, belajar JavaScript jadi lebih mudah. Bahkan untuk pemula sekalipun. Bahasa JavaScript sendiri harus dijalankan oleh interpreter. Code harus diterjemahkan ke dalam bahasa yang dimengerti komputer agar bisa dijalankan. Nah, proses penerjemahan ini dilakukan secara otomatis oleh web browser. Dalam perkembangannya bahasa javascript juga dapat untuk memberi perintah kepada komputer untuk melakukan sebuah perintah seperti mengolah data spasial, melakukan perhitungan algoritma, hingga memvisualiasikan hasil. 
 
-### 1.2. Dasar _Coding_ di JavaScript
+## 1.2. Dasar _Coding_ di JavaScript
 Sama seperti bahasa dalam bahasa Javascript juga terdapat beberapa kata yang digunakan untuk melakukan sesuatu. Berikut merupakan beberapa _coding_ atau kata dasar yang sering digunakan untuk mengiring perintah lanjutan.
 
-#### 1. var
+### 1. var
 Merupakan _coding_ yang digunakan untuk mendefinisikan sebuah variabel. Pendefinisian variabel dalam javascript dapat dilakukan menggunakan var, let, dan const. let dan const digunakan dalam mendefinisikan variabel yang lebih detail. Apabila variabel general maka gunakan **const** sedangkan apabila variabel dapat berubah maka dapat menggunakan **let**. Variabel juga merupakan wadah untuk menyimpan data (menyimpan nilai data), sebagai berikut. 
 ```
 var papua = "Kota Jayapura"
 ```
 
-#### 2. print
+### 2. print
 Merupakan _coding_ yang digunakan untuk mencetak hasil dari variabel, sebagai berikut.
 ```
 var papua = "Kota Jayapura"
 print(papua); //Hasil akan menunjukkan Kota Jayapura
 ```
 
-#### 3. if
+### 3. if
 Merupakan _coding_ yang digunakan untuk menandai atau menarik sebuah pernyataan dengan sebuah kondisi tertentu, sebagai berikut.
 ```
 if (condition) {
@@ -79,7 +79,7 @@ if (waktu > 18) {
 }
 ```
 
-#### 4. function
+### 4. function
 _Coding_ ini merupakan perintah untuk menjalankan suatu fungsi tertentu, sebagai berikut.
 ```
 var x = cobaFunction(5, 10);   //Contoh variabel x menggunakan function
@@ -93,13 +93,13 @@ print (x)
 = 50
 ```
 
-#### 5. return
+### 5. return
 Merupakan _coding_ yang digunakan untuk menutup / exit function. Contoh dapat dilihat pada bagian function.
 
-### 1.2. Penulisan variabel
+## 1.2. Penulisan variabel
 Penamaan variabel dalam javascript tidak dapat dilakukan sembarangan seperti menulis dalam word, terdapat beberapa ketentuan yang harus diikuti, sebagai berikut.
 
-#### 1. Variabel tidak boleh dituliskan dengan menggunakan angka di depannya.
+### 1. Variabel tidak boleh dituliskan dengan menggunakan angka di depannya.
 ```
 // salah
 var 123jayapura = "Papua";
@@ -108,12 +108,12 @@ var 123jayapura = "Papua";
 var jayapura123 = "Papua";
 ```
 
-#### 2. Variabel dapat dituliskan mengguankan awalan underscore. 
+### 2. Variabel dapat dituliskan mengguankan awalan underscore. 
 ```
 var _jayapura = "Papua";
 ```
 
-#### 3. Variabel disarankan menggunakan camelCase apabila terdiri dari dua suku kata
+### 3. Variabel disarankan menggunakan camelCase apabila terdiri dari dua suku kata
 ```
 var wonderfulIndonesia = "Wonderfull Papua";
 ```
@@ -127,7 +127,7 @@ Export.table.toDrive({
 })
 ```
 
-### 1.3. Jenis jenis data dalam Javascript 
+## 1.3. Jenis jenis data dalam Javascript 
 Dalam mengenali jenis data javascript dapat langsung mengenali jenis data yang dituliskan (_dynamic typing_), tidak seperti pada bahasa C, C++, Java, dsb yang harus menuliskan tipe data pada saat pembuatan variabel (_static typing_). Berikut merupakan beberapa jenis data yang digunakan dalam bahasa javascript
 
 1. Object
@@ -139,7 +139,7 @@ Dalam mengenali jenis data javascript dapat langsung mengenali jenis data yang d
 7. Float (bilangan Pecahan)
 8. Function
 
-#### 1.3.1. Object
+### 1.3.1. Object
 Jenis data object merupakan tipe data yang memiliki lebih dari satu nilai. Perbedaan dengan array terletak pada indeks, dimana object tidak punya indeks tapi nama. Selain itu, pada object dapat memasukan Function dan Array sehingga lebih praktis.
 ```
 const jayapura = {provinsi:"Papua", administrasi:"Kota", luas:940, jumlahpenduduk:315.872};
@@ -154,7 +154,7 @@ const person = {
 };
 ```
 
-#### 1.3.2. Date
+### 1.3.2. Date
 Penulisan tanggal pada javascript dapat dilakukan dengan menggunakan struktur **new date()**. Berikut merupakan beberapa bentuk penulisan tanggal yang dapat dilakukan pada bahasa javascript.
 ```
 new Date()
@@ -168,7 +168,7 @@ const d = new Date(2018, 11);
 const d = new Date("October 13, 2014 11:13:00");
 ```
 
-#### 1.3.3. Array
+### 1.3.3. Array
 Jenis data array merupakan jenis data yang memiliki banyak isi. Seperti variabel dengan banyak isi. Array diciptakan untuk mempersingkat variabel tertentu.
 ```
 var kota1 = "Jayapura";
@@ -186,7 +186,7 @@ const kota = [
 ;
 ```
 
-#### 1.3.4. String 
+### 1.3.4. String 
 String merupakan jenis data berupa teks atau tulisan, sebagai berikut.
 
 ```
@@ -194,26 +194,26 @@ String merupakan jenis data berupa teks atau tulisan, sebagai berikut.
 var indonesia = "papua";
 ```
 
-#### 1.5.5. Number 
+### 1.5.5. Number 
 Merupakan jenis data berupa bilangan, sebagai berikut
 ```
 var indonesia = 1945
 ```
 
-#### 1.4.6. Boolean
+### 1.4.6. Boolean
 Merupakan jenis data berupa dengan dua hasil seperti YES / NO, ON / OFF, TRUE / FALSE, BENAR / SALAH.
 ```
 Boolean(10 > 9)   //true
 ```
 
-#### 1.4.7 Float
+### 1.4.7 Float
 Hampir sama dengan jenis data bilangan, namun data float memiliki desimal, sebagai berikut.
 ```
 var y = 192e5;      // 19200000
 var z = 192e-5;     // 0.00192
 ```
 
-#### 1.4.8 Function
+### 1.4.8 Function
 Function merupakan sebuah fungsi khusus yang dibuat untuk melakukan tugas tertentu seperti menghitung.
 Berikut merupakan rumus dasar function pada javascript.
 ```
