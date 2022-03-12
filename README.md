@@ -28,6 +28,10 @@ Setelah mengikuti pelatihan ini peserta pelatihan diharapkan mampu:
 6. Memvisualisasikan plot deret waktu di Google Earth Engine
 7. Membuat aplikasi sederhana di Google Earth Engine
 
+
+## Materi Pelatihan
+---------
+
 **Materi Presentasi dapat diakses pada link berikut:**
 1. [Dasar Penginderaan Jauh]()
 2. [Penginderaan Jauh Kehutanan]()
