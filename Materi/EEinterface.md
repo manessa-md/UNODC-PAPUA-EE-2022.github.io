@@ -41,4 +41,4 @@ Merupakan bagian utama dimana hasil dari perintah _coding_ dapat ditampilkan mel
 **Tambahkan Screen Shoot perbedaan peta dan satelit**
 
 
-### Thank you
+
