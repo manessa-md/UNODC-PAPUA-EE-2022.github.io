@@ -5,7 +5,7 @@ Konten Panduan
 - Mendaftar Akun Google Untuk Google Earth Engine
 - Memilih Citra
 - Memahami Informasi Citra Sentinel-2
-- Filtering Citra Sentinel-2
+- Load dan Filtering Citra Sentinel-2
 - Visualisasi Citra Sentinel-2
 - Menampilkan Citra Sentinel-2
 
@@ -23,10 +23,15 @@ Setelah peluncuran produk Google Earth Engine, platform ini telah menyediakan da
 
 ### Memahami Informasi Citra Sentinel-2
 
-Agar data citra satelit yang kita pilih sesuai dengan yang kita inginkan, maka perlu untuk _cross check_ data tersebut dengan memahami informasi terkait data citranya. Cara untuk mengetahui informasi dengan _klik_ citra yang hendak kita pilih, setelah itu akan tampil informasi citra seperti pada gambar berikut:
+Agar data citra satelit yang kita pilih sesuai dengan yang kita inginkan, maka perlu untuk _cross check_ data tersebut dengan memahami informasi terkait data citranya. Cara untuk mengetahui informasi dengan _klik_ citra yang hendak kita pilih, pada latihan kali ini menggunakan data citra Sentinel-2 level 2A, setelah itu akan tampil informasi citra seperti pada gambar berikut:
 
 <img width="960" alt="Mod2-S2-02" src="https://user-images.githubusercontent.com/69818715/158025267-f658b97c-4fe1-4b70-ae64-da0efdad71ab.png">
 
+Ketika klik 
+
+### Load dan Filtering Citra Sentinel-2
+
+Tahap pertama pada visualisasi citra adalah proses _load_ dan _filtering_ citra satelit. 
 
 ```
 
