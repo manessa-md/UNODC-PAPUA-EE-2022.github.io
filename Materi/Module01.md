@@ -3,34 +3,30 @@ Module 1a Google Earth Engine Interface
 --------------
 
 Google earth engine memiliki tampilan yang sangat sederhana dengan fungsi yang sangat beragam. Pengolahan data secara spasial maupun statistik dapat dilakukan pada aplikasi ini. 
-[Gambar 1. Interface Google Earth Engine]
-![EEInterfacebaru](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/gee_editor.png)
+![eeInterface](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/gee_editor.png)
 
 ## 1. Search box
 Merupakan kotak pencarian seperti pada laman google.com, namun pada aplikasi google earth engine search box digunakan hanya untuk mencari citra satelit. Kata kunci pencarian dapat menggunakan nama citra yang dicari atau fungsi dari citra tersebut. Berikut merupakan contoh pencarian citra sentinel pada search box.
-[Gambar 2. Search Box Google Earth Engine]
-![EESearchbox](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/searchbox.png)
+![eeInterface](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/searchbox.png)
 
 ## 2. Script, doc dan asset
 ### Script
 Pada bagian script terdapat script _coding_ yang sudah pernah dibuat dan di save, serta terdapat beberapa contoh script aplikasi citra satelit yang dibuat oleh tim google. 
-[Gambar 3. Script Google Earth Engine]
-![EESearchbox](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/leftpanel.png)
+
+![eeInterface](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/leftpanel.png)
 Pada bagian ini juga terdapat menu **new** untuk menambahkan reprosit0ry, folder, file. Repository merupakan tempat menyimpan dan folder. Sedangkan folder merupakan kumpulan file. Pembuatan reprository, folder, dan file dapat dilakukan dengan memilih menu **new** kemudian pilih apa yang akan dibuat dan diberikan nama sesuai kebutuhan.
-[Gambar 4. Repository in Google Earth Engine]
-![EESearchbox](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/repositoy.png)
-[Gambar 5. Folder in Google Earth Engine]
-![EESearchbox](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/folder.png)
-[Gambar 6. File in Google Earth Engine]
-![EESearchbox](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/file.png)
+
+![eeInterface](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/repositoy.png)
+![eeInterface](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/folder.png)
+![eeInterface](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/file.png)
 
 ### Doc
 Pada bagian doc terdapat instruksi atau contoh dari function. Bagian ini sangat berguna karena terkadang kita tidak dapat menghafal semua script dan fungsinya. 
 
 ### Asset
 Bagian terakhir yaitu asset, yaitu bagian yang memiliki fungsi sebagai tempat untuk mengunggah dan menyimpan file spasial (json, kml, shp dan sebagainya) dari komputer menuju earth engine. Menambahkan asset (file geospasial) dilakukan dengan memilih menu **new** kemudian pilih jenis file yang akan ditambahkan (Csv, Shp, Geotiff, Json). 
-![EESearchbox](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/newasset.png)
-![EESearchbox](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/shapefileasset.png)
+![eeInterface](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/newasset.png)
+![eeInterface](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/shapefileasset.png)
 
 
 
@@ -46,12 +42,15 @@ Console merupakan bagian earth engine untuk menampilkan hasil data non spasial s
 Sedangkan task merupakan bagian untuk melakukan dan melihat upload data hasil pengolahan di google earth engine.
 
 ## 5. Geometry tools
-Geometry tools merupakan alat dalam google earth engine yang memiliki fungsi untuk membuat bentuk bentuk geometri dengan nilai koordinat di muka peta. Bentuk geometri yang dapat dibuat berupa titik, garis dan polygon.
-**Berikan Screen Shoot dari pembuatan poligon, point, dan line**
+Geometry tools merupakan alat dalam google earth engine yang memiliki fungsi untuk membuat bentuk bentuk geometri dengan nilai koordinat di muka peta. Bentuk geometri yang dapat dibuat berupa titik, garis dan polygon. Berikut merupakan contoh pembuatan geometry titik, garis, polygon dan rectangle.
+
 
 ## 6. Muka Peta
 Merupakan bagian utama dimana hasil dari perintah _coding_ dapat ditampilkan melalui proses visualiasi. Pada bagian muka peta juga terdapat layer dan jenis peta dasar. Layer merupakan lapisan peta yang ditampilkan selain peta dasar sedangkan peta dasar yang disediakan google terdapat 2 jenis yaitu peta satelit dan garis.
-**Tambahkan Screen Shoot perbedaan peta dan satelit**
+
+![eeInterface](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/Citragaris.png)
+
+![eeInterface](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/77d428e0f74866bff2a1e87174fa48a0f9f21c1d/Image/eeInterface/Citrasatelit.png)
 
 
 ---------
