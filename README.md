@@ -4,7 +4,6 @@ Module pelatihan ini dikembangkan oleh [Masita Dwi Mandini Manessa](https://www.
 --------------
 
 ## Prasyarat
--------------
 
 Penyelesaian latihan ini memerlukan penggunaan browser Google Chrome dan akun Google Earth Engine. Jika Anda belum mendaftar - lakukan sekarang di tab baru dengan menggunakan link berikut:
 
@@ -14,10 +13,9 @@ Setelah terdaftar, Anda dapat mengakses Earth Engine environment pada link berik
 
 https://code.earthengine.google.com
 
-------------------------------------------------------------------------
+-------------
 
 ## Tujuan Pelatihan
----------
 
 Setelah mengikuti pelatihan ini peserta pelatihan diharapkan mampu: 
 1. Mengunakan antarmuka Editor Kode Google Earth Engine
@@ -27,10 +25,10 @@ Setelah mengikuti pelatihan ini peserta pelatihan diharapkan mampu:
 5. Menerapkan algoritme indeks vegetasi ke data Sentinel-1 dan Sentinel-2 di Google Earth Engine
 6. Memvisualisasikan plot deret waktu di Google Earth Engine
 7. Membuat aplikasi sederhana di Google Earth Engine
-
+-------------
 
 ## Materi Pelatihan
----------
+
 
 **Materi Presentasi dapat diakses pada link berikut:**
 1. [Dasar Penginderaan Jauh]()
@@ -46,6 +44,5 @@ Setelah mengikuti pelatihan ini peserta pelatihan diharapkan mampu:
 6. [Module 6: Aplikasi monitoring hutan](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Materi/Module06.md)
 
 
-
-
+-------------
 
