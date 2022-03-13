@@ -7,7 +7,7 @@ Konten Panduan
 - Memahami Informasi Citra Sentinel-2
 - Load dan Filtering Citra Sentinel-2
 - Visualisasi Citra Sentinel-2
-- Menampilkan Citra Sentinel-2
+- Memilih data dari ImageCollection
 
 ### Prasyarat mendaftar Akun Google untuk Google Earth Engine
 Untuk menjalankan prasyarat ini memerlukan langkah untuk mendaftarkan akun Google yang akan di gunakan untuk menjalankan GEE. Pendaftaran akun bisa dilakukan melalui browser manapun (Disarankan memakai Google Chrome). Setelah akun telah di daftarkan maka alun tersebut dapat digunakan dengan mengakses tautan GEE : https://code.earthengine.google.com . Setelah berhasil masuk dengan akun yang telah didaftarkan, maka Google Earth Engine sudah bisa digunakan. 
@@ -68,13 +68,37 @@ print(S2)
 <img width="960" alt="Mod2-S2-04" src="https://user-images.githubusercontent.com/69818715/158045788-dbe83ba5-d384-4390-af9a-07c0882fa96e.png">
 Gambar 4. Tampilan Coding Load dan Filtering Citra Satelit
 
-### 
-```
+### Visualisasi Citra Sentinel-2
+
+
 
 ```
+var visualization = {
+  min: 0.0,
+  max: 0.3,
+  bands: ['B4', 'B3', 'B2'],
+};
 
+Map.addLayer(S2.first(), visualization, 'RGB');
 ```
 
+<img width="960" alt="Mod2-S2-05" src="https://user-images.githubusercontent.com/69818715/158046321-e8326070-d054-46bc-9505-95de5cf49336.png">
+Gambar 5. Tampilan Visualisasi Citra Sentinel-2
+
+### Memilih Data dari ImageCollection
+
+
 ```
+var listOfImages = S2.toList(S2.size());
+var img1 = ee.Image(listOfImages.get(0));
+var img2 = ee.Image(listOfImages.get(1));
+
+print(img2)
+
+Map.addLayer(img2, visualization, 'img2');
+```
+
+![2](https://user-images.githubusercontent.com/69818715/158046578-27a6a614-0a32-403f-9dc0-40bf978145d3.JPG)
+Gambar 6. Tampilan Hasil Pemilihan Data Image
 
 
