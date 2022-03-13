@@ -1,4 +1,4 @@
-# PANDUAN DASAR GOOGLE EARTH ENGINE 2
+# PANDUAN DASAR GOOGLE EARTH ENGINE
 
 ## Mengenal Kombinasi Band dan Visualisasi Citra Sentinel-2 menggunakan Google Earth Engine 
 Konten Panduan
@@ -51,9 +51,6 @@ function maskS2clouds(image) {
 
   return image.updateMask(mask).clip(geometry).divide(10000);
 }
-```
-
-```
 var S2 = ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED')
                   .filterDate('2021-01-01', '2022-03-10')
                   .filter(ee.Filter.bounds(geometry))
