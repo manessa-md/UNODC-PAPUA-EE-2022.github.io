@@ -2,7 +2,7 @@
 Module 2 Dasar Koding
 --------------
 
-## Mengenal Data dan Visualisasi Citra Sentinel-1 menggunakan Google Earth Engine 
+## 2a. Mengenal Data dan Visualisasi Citra Sentinel-1 menggunakan Google Earth Engine 
 Konten Panduan
 - Mendaftar Akun Google Untuk Google Earth Engine
 - Memilih Citra
@@ -151,7 +151,7 @@ Gambar 13. Tampilan Visualisasi Sentinel-1
 
 --------------
 
-## Mengenal Kombinasi Band dan Visualisasi Citra Sentinel-2 menggunakan Google Earth Engine 
+## 2b Mengenal Kombinasi Band dan Visualisasi Citra Sentinel-2 menggunakan Google Earth Engine 
 Konten Panduan
 - Memilih Citra
 - Memahami Informasi Citra Sentinel-2
