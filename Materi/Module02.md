@@ -31,11 +31,8 @@ Gambar 3. Informasi Citra Satelit
 
 ### Memanggil data Citra Sentinel-2
 
-Tahap pertama pada visualisasi citra adalah proses _load_ dan _filtering_ citra satelit dimana citra satelit yang hendak dipilih di _setting_ sesuai dengan keperluan. Filter yang penting utnuk dilakukan meliputi filtering waktu/date, filtering wilayah tutupan citra, filtering persentase citra dan masking citra.
-
+Tahap pertama pada visualisasi citra adalah proses _load_ dan _filtering_ citra satelit dimana citra satelit yang hendak dipilih di _setting_ sesuai dengan keperluan. Filter yang penting utnuk dilakukan meliputi filtering waktu/date, filtering wilayah tutupan citra, filtering persentase citra dan masking citra. 
 ```
-// 1. Memanggil Data Sentinel-2 
-
 /**
  * Function to mask clouds using the Sentinel-2 QA band
  * @param {ee.Image} image Sentinel-2 image
@@ -54,7 +51,9 @@ function maskS2clouds(image) {
 
   return image.updateMask(mask).clip(geometry).divide(10000);
 }
+```
 
+```
 var S2 = ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED')
                   .filterDate('2021-01-01', '2022-03-10')
                   .filter(ee.Filter.bounds(geometry))
@@ -70,7 +69,7 @@ Gambar 4. Tampilan Coding Load dan Filtering Citra Satelit
 
 ### Visualisasi Citra Sentinel-2
 
-
+Data citra yang ditampilkan masih berupa ImageCollection (Koleksi Citra) Sentinel-2. Data ImageCollection yang telah di pilih diatas dapat disesuaikan tampilannya agar sesuai dengan informasi yang akan ditampilkan. Visualisasi terdiri dari komposit band atau pallete (pemilihan warna). Selain itu, dapat mengatur hasil minimal dan maksimal data nilai piksel/panjang gelombang.
 
 ```
 var visualization = {
@@ -85,8 +84,9 @@ Map.addLayer(S2.first(), visualization, 'RGB');
 <img width="960" alt="Mod2-S2-05" src="https://user-images.githubusercontent.com/69818715/158046321-e8326070-d054-46bc-9505-95de5cf49336.png">
 Gambar 5. Tampilan Visualisasi Citra Sentinel-2
 
-### Memilih Data dari ImageCollection
+### Memilih Visualisasi Data Image dari ImageCollection
 
+Pada tahap visualisasi juga dapat memungkinkan untuk menampilkan beberapa image dari Image Collection sentinel-2. Hal tersebut dilakukan untuk memilih image yang sesuai untuk divisualisasikan atau untuk tujuan perbandingan antar image. Pemilihan tampilan image diawali dengan perintah .toList() dan dilanjutkan dengan .get().
 
 ```
 var listOfImages = S2.toList(S2.size());
