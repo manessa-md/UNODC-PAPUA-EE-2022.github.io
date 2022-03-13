@@ -21,7 +21,7 @@ Indeks vegetasi merupakan pengukuran optis tingkat kehijauan (greenness) kanopi 
 
 ## Grafik Perubahan Nilai NDVI Menggunakan Citra Sentinel 2A
 ### Menentukan Titik Lokasi Penelitian
-Lokasi penelitian yang digunakan dapat berupa titik maupun polygon (area). Pembuatan lokasi sampel dapat melalui pembuatan manual menggunakan geometry tools pada Google Earth Engine maupun menggunakan asset. 
+Lokasi penelitian yang digunakan dapat berupa titik maupun polygon (area). Pembuatan lokasi sampel dapat melalui pembuatan manual menggunakan geometry tools pada Google Earth Engine maupun menggunakan asset.   
 
 ```
 // 1. plot titik observasi
