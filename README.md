@@ -33,7 +33,7 @@ Setelah mengikuti pelatihan ini peserta pelatihan diharapkan mampu:
 **Materi Presentasi dapat diakses pada link berikut:**
 1. [Dasar Penginderaan Jauh](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Presentasi/01_BasicRS.pdf)
 2. [Penginderaan Jauh Kehutanan](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Presentasi/02_RSforest.pdf)
-3. [Pengenalan GEE]()
+3. [Pengenalan GEE](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Presentasi/03_GEE%20Indonesia%20hands-on%202022.pdf)
 
 **Module Pelatihan dapat diakses pada link berikut:**
 1. [Module 1: Dasar Coding Java Script dan Pengenalan aplikasi Google Earth Engine](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Materi/Module01.md)
