@@ -275,15 +275,15 @@ print(chart3)
 
 **Menghitung Nilai RVI Menggunakan Citra Sentinel 1**
 
-<img width="960" alt="Mod3-S2-02" src="https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/b811fff9048640f20528c9a6bb45d262158399e8/Image/Mod05S1/Mod05-RVI-05.png">
+<img width="960" alt="Mod3-S2-02" src="https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/b811fff9048640f20528c9a6bb45d262158399e8/Image/Mod05S1/Mod05-RVI-06.png.png">
 
 **Hasil Grafik Indeks RVI Menggunakan Citra Sentinel 1**
 
-<img width="960" alt="Mod3-S2-02" src="https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/b811fff9048640f20528c9a6bb45d262158399e8/Image/Mod05S1/Mod05-RVI-06.png.png">
+<img width="960" alt="Mod3-S2-02" src="https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/b811fff9048640f20528c9a6bb45d262158399e8/Image/Mod05S1/Mod05-RVI-07.png.png">
 
 **Hasil Grafik Backscatter VV Citra Sentinel 1**
 
-<img width="960" alt="Mod3-S2-02" src="https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/b811fff9048640f20528c9a6bb45d262158399e8/Image/Mod05S1/Mod05-RVI-07.png.png">
+<img width="960" alt="Mod3-S2-02" src="https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/b811fff9048640f20528c9a6bb45d262158399e8/Image/Mod05S1/Mod05-RVI-08.png.png">
 
 **Hasil Grafik Backscatter VH Citra Sentinel 1**
 
