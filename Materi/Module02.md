@@ -1,6 +1,8 @@
 # PANDUAN DASAR GOOGLE EARTH ENGINE
+Module 2 Dasar Koding
+--------------
 
-## Mengenal Polarisasi dan Visualisasi Citra Sentinel-1 menggunakan Google Earth Engine 
+## Mengenal Data dan Visualisasi Citra Sentinel-1 menggunakan Google Earth Engine 
 Konten Panduan
 - Mendaftar Akun Google Untuk Google Earth Engine
 - Memilih Citra
@@ -146,6 +148,8 @@ Gambar 12. Tampilan Visualisasi Sentinel-1
 <img width="960" alt="Mod2-S1-14" src="https://user-images.githubusercontent.com/69818715/158053573-08004c98-a811-40fa-a17a-cea7efd8b4ea.png">
 
 Gambar 13. Tampilan Visualisasi Sentinel-1
+
+--------------
 
 ## Mengenal Kombinasi Band dan Visualisasi Citra Sentinel-2 menggunakan Google Earth Engine 
 Konten Panduan
