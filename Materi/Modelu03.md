@@ -112,6 +112,7 @@ Map.addLayer(S2ndvi, visualizationNDVI, 'NDVI')
 **Visualiasi NDVI citra sentinel 2A**
 
 Hasil visualisasi NDVI menunjukkan warna hitam dan putih dengan range nilai antara 0 - 1. Dimana semakin tinggi nilai NDVI (berwarna putih) menujukkan kehijauan vegetasi yang tinggi, sedangkan yang berwarna hitam menunjukkan indeks vegetasi yang rendah. 
+
 --------------
 
 ## 3b Mengekstrak RVI Menggunakan Citra Sentinel 1
