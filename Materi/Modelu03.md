@@ -114,4 +114,102 @@ Hasil visualisasi NDVI menunjukkan warna hitam dan putih dengan range nilai anta
 
 ## Mengekstrak RVI Menggunakan Citra Sentinel 1
 ### Memasukkan Citra Sentinel 1
+Citra sentinel 1 merupakan citra SAR (_synthetic apeture radar_) dengan 2 jenis saluran yaitu saluran VV (vertical - vertical) dan VH (vertical - horizontal). Sebagai citraSyntetic Aperture Radar (SAR), Sentinel-1 memuat informasi yang lebih fleksibel dalam perolehan data karena tidak terhalang oleh gangguan awan dan cuaca sehingga dapat digunakan untuk memperoleh informasi kondisi lahan. 
+```
+// 1. Memanggil Data Sentinel-1
 
+var s1VV = ee.ImageCollection("COPERNICUS/S1_GRD")
+              .filter(ee.Filter.listContains('transmitterReceiverPolarisation', 'VV'))
+              .filter(ee.Filter.eq('instrumentMode', 'IW'))
+              .filter(ee.Filter.date('2022-03-01', '2022-03-10'))
+              .select('VV')
+              .filter(ee.Filter.bounds(geometry))
+              .map(function(image) {
+                var edge = image.lt(-30.0);
+                var maskedImage = image.mask().and(edge.not());
+                return image.updateMask(maskedImage);
+              })
+              .mean()
+              .clip(geometry);
+
+var s1VH = ee.ImageCollection("COPERNICUS/S1_GRD")
+              .filter(ee.Filter.listContains('transmitterReceiverPolarisation', 'VH'))
+              .filter(ee.Filter.eq('instrumentMode', 'IW'))
+              .filter(ee.Filter.date('2022-03-01', '2022-03-10'))
+              .select('VH')
+              .filter(ee.Filter.bounds(geometry))
+              .map(function(image) {
+                var edge = image.lt(-30.0);
+                var maskedImage = image.mask().and(edge.not());
+                return image.updateMask(maskedImage);
+              })
+              .mean()
+              .clip(geometry);
+
+var S1 = s1VV.addBands(s1VH)
+
+Map.addLayer(s1VV,imageVisParam3,'Polarisasi VV');
+Map.addLayer(s1VH,imageVisParam2,'Polarisasi VH');
+Map.addLayer(S1,imageVisParam,'Sentinel-1');
+```
+<img width="960" alt="Mod3-S2-02" src="https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/1cd266f1414f07c0ba8fbff64c6ef22c375c3c2b/Image/Mod03S1/Mod3-RVI-01.png">
+
+**Citra Sentinel 1 VV dan VH tanpa visualiasi**
+
+### Visualisasi Citra Sentinel 1
+```
+var geometry = 
+    /* color: #00ffff */
+    /* shown: false */
+    /* displayProperties: [
+      {
+        "type": "rectangle"
+      }
+    ] */
+    ee.Geometry.Polygon(
+        [[[140.0460830646493, -2.4074170298256954],
+          [140.0460830646493, -3.032929004315599],
+          [140.9579482990243, -3.032929004315599],
+          [140.9579482990243, -2.4074170298256954]]], null, false),
+    imageVisParam = {"opacity":1,"bands":["VV","VH","VV"],"min":-25.6366917765374,"max":-3.7824595224765467,"gamma":1},
+    imageVisParam2 = {"opacity":1,"bands":["VH"],"min":-26.346643591794457,"max":-10.389870876889972,"gamma":1},
+    imageVisParam3 = {"opacity":1,"bands":["VV"],"min":-19.7839558785873,"max":-3.470742509249604,"gamma":1};
+```
+<img width="960" alt="Mod3-S2-02" src="https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/1cd266f1414f07c0ba8fbff64c6ef22c375c3c2b/Image/Mod03S1/Mod3-RVI-02.png">
+
+**Hasil Visualisasi citra sentinel 1 VV dan VH**
+
+### Menghitung RVI dan Visualisasi RVI 
+Perhitungan nilai RVI menggunakan citra sentinel 1 dilakukan dengan rumus RH = (4 * VH)/(VV + VH). Hasil perhitungan nilai RVI kemudian digabungkan dengan citra Sentinel 1 sama seperti proses penggabungan NDVI dengan citra sentinel 2.  
+```
+// 2. Membuat fungsi RVI 
+
+// membuat fungsi formula dimana band NIR adalah B8 dan band Merah adalah B4
+var addRVI = function(image) {
+  var rviT = image.expression(
+    '(4 * VH) / (VV + VH)', {
+      'VV': image.select('VV'),
+      'VH': image.select('VH')
+});
+  var rvi = rviT.rename('RVI');
+  return rvi;
+};
+
+//aplikasi kan fungsi kepada citra S1 yang sudah didefinisikan terlebih dahulu
+var S1rvi = addRVI(S1);
+
+// check data dengan print
+print(S1rvi);
+
+// setting visualisasi data
+var visualizationRVI = {
+  min: 0.0, 
+  max: 5,
+  bands: ['RVI'],
+};
+
+Map.addLayer(S1rvi, visualizationRVI, 'rvi')
+```
+<img width="960" alt="Mod3-S2-02" src="https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/1cd266f1414f07c0ba8fbff64c6ef22c375c3c2b/Image/Mod03S1/Mod3-RVI-03.png">
+
+**Hasil Visualisasi RVI Citra Sentinel 1**
