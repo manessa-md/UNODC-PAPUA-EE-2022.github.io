@@ -1,6 +1,8 @@
 # PANDUAN DASAR GOOGLE EARTH ENGINE
+Module 3 Index Vegetasi Penginderaan Jauh
+--------------
 
-## Mengekstrak Indeks Vegetasi Menggunakan Citra Sentinel
+## 3a Mengekstrak Indeks Vegetasi Menggunakan Citra Sentinel 2A
 Konten Panduan
 - Memasukkan Citra
 - Melakukan Cloud Mask (Sentinel 2A)
@@ -110,9 +112,9 @@ Map.addLayer(S2ndvi, visualizationNDVI, 'NDVI')
 **Visualiasi NDVI citra sentinel 2A**
 
 Hasil visualisasi NDVI menunjukkan warna hitam dan putih dengan range nilai antara 0 - 1. Dimana semakin tinggi nilai NDVI (berwarna putih) menujukkan kehijauan vegetasi yang tinggi, sedangkan yang berwarna hitam menunjukkan indeks vegetasi yang rendah. 
+--------------
 
-
-## Mengekstrak RVI Menggunakan Citra Sentinel 1
+## 3b Mengekstrak RVI Menggunakan Citra Sentinel 1
 ### Memasukkan Citra Sentinel 1
 Citra sentinel 1 merupakan citra SAR (_synthetic apeture radar_) dengan 2 jenis saluran yaitu saluran VV (vertical - vertical) dan VH (vertical - horizontal). Sebagai citraSyntetic Aperture Radar (SAR), Sentinel-1 memuat informasi yang lebih fleksibel dalam perolehan data karena tidak terhalang oleh gangguan awan dan cuaca sehingga dapat digunakan untuk memperoleh informasi kondisi lahan. 
 ```
