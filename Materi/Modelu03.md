@@ -213,3 +213,5 @@ Map.addLayer(S1rvi, visualizationRVI, 'rvi')
 <img width="960" alt="Mod3-S2-02" src="https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/1cd266f1414f07c0ba8fbff64c6ef22c375c3c2b/Image/Mod03S1/Mod3-RVI-03.png">
 
 **Hasil Visualisasi RVI Citra Sentinel 1**
+
+Hasil RVI citra sentinel 1 menunjukkan nilai 0 hingga 5. Berbeda dengan pada perhitungan NDVI dengan nilai 0 - 1, hal ini terjadi karena algoritma NDVI di bentuk dengan normalisasi sehingga menghasilkan nilai 0 - 1.
