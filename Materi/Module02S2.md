@@ -1,4 +1,4 @@
-# PANDUAN DASAR GOOGLE EARTH ENGINE
+# PANDUAN DASAR GOOGLE EARTH ENGINE 2
 
 ## Mengenal Kombinasi Band dan Visualisasi Citra Sentinel-2 menggunakan Google Earth Engine 
 Konten Panduan
