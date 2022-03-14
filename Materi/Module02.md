@@ -246,4 +246,4 @@ Map.addLayer(img2, visualization, 'img2');
 Gambar 18. Tampilan Hasil Pemilihan Data Image
 
 
-
+[Script](https://code.earthengine.google.com/a18be3676d9bb2c0af4c8a4f964aff9c)
