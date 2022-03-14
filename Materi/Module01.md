@@ -198,11 +198,11 @@ Dalam mengenali jenis data javascript dapat langsung mengenali jenis data yang d
 ### 1.3.1. Object
 Jenis data object merupakan tipe data yang memiliki lebih dari satu nilai. Perbedaan dengan array terletak pada indeks, dimana object tidak punya indeks tapi nama. Selain itu, pada object dapat memasukan Function dan Array sehingga lebih praktis.
 ```
-const jayapura = {provinsi:"Papua", administrasi:"Kota", luas:940, jumlahpenduduk:315.872};
+var jayapura = {provinsi:"Papua", administrasi:"Kota", luas:940, jumlahpenduduk:315.872};
 
 //contoh lain menggunakan enter sehingga lebih mudah dilihat
 
-const person = {
+var person = {
   provinsi: "Papua",
   administrasi: "Kota",
   luas: 940,
