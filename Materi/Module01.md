@@ -219,9 +219,9 @@ new Date(milliseconds)
 new Date(date string)
 
 ///contoh
-const d = new Date(2018, 11, 24, 10, 33, 30);
-const d = new Date(2018, 11);
-const d = new Date("October 13, 2014 11:13:00");
+var d = new Date(2018, 11, 24, 10, 33, 30);
+var d = new Date(2018, 11);
+var d = new Date("October 13, 2014 11:13:00");
 ```
 
 ### 1.3.3. Array
