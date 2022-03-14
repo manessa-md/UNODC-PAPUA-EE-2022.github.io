@@ -230,16 +230,6 @@ Jenis data array merupakan jenis data yang memiliki banyak isi. Seperti variabel
 var kota1 = "Jayapura";
 var kota2 = "Sentani";
 var kota3 = "Biak";
-
-//Jika menggunakan kota1, kota2, dan kota3 maka akan terlalu repot dan banyak
-const kota = ["Jayapura", "Sentani", "Biak"];
-
-//atau dapat ditulis secara horizontal
-const kota = [
-"Jayapura", 
-"Sentani", 
-"Biak"]
-;
 ```
 
 ### 1.3.4. String 
