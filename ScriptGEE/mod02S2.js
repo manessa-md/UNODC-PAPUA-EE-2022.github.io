@@ -1,4 +1,4 @@
-```
+
 // 1. Memanggil Data Sentinel-1
 
 var s1VV = ee.ImageCollection("COPERNICUS/S1_GRD")
@@ -42,4 +42,4 @@ Export.image.toDrive({
   description: 'Sentinel-1-papua',
   region: geometry
 });
-```
+
