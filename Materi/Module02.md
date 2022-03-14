@@ -26,6 +26,9 @@ Setelah peluncuran produk Google Earth Engine, platform ini telah menyediakan da
 
 Gambar 2. Tampilan Search Dataset Citra
 
+
+#  (Script)[https://code.earthengine.google.com/a18be3676d9bb2c0af4c8a4f964aff9c]
+
 ### Memahami Informasi Citra Sentinel-1
 
 Pemilihan citra dapat dilakukan dengan mempelajari lebih lanjut terkait dataset yang akan di gunakan. Hal tersebut dangat berguna untuk mengetahui rentang waktu ketersediaan citra tersebut. Untuk mengetahui lebih lengkap detail terkait informasi citra dapat di klik tanda panah di pojok kanan atas.
