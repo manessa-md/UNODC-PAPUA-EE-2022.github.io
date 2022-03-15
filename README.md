@@ -50,3 +50,5 @@ Setelah mengikuti pelatihan ini peserta pelatihan diharapkan mampu:
 1. [Fair BRI Project](https://masitamanessa.users.earthengine.app/view/bri-vegetationloss-v2)
 2. [Area Tergenang](https://masitamanessa.users.earthengine.app/view/rob-manessa-app)
 3. [Cahaya Lampu Malam Kota](https://masitamanessa.users.earthengine.app/view/night-light-manessa)
+4. [Forest Watch](https://www.globalforestwatch.org/map/)
+5. [Other App](https://www.earthengine.app/)
