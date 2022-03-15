@@ -46,3 +46,5 @@ Setelah mengikuti pelatihan ini peserta pelatihan diharapkan mampu:
 
 -------------
 
+[https://code.earthengine.google.com/b3605f6aa77402824a38150508d22182](https://code.earthengine.google.com/b3605f6aa77402824a38150508d22182) 
+
