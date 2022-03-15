@@ -30,7 +30,7 @@ var S22019 = ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED')
                   .filterDate('2019-01-01', '2019-12-30')
                   .filter(ee.Filter.bounds(geometry))
                   // Pre-filter to get less cloudy granules.
-                  .filter(ee.Filter.lt('CLOUDY_PIXEL_PERCENTAGE',10))
+                  .filter(ee.Filter.lt('CLOUDY_PIXEL_PERCENTAGE',40))
                   .map(maskS2clouds)
                   .mean();
                   
