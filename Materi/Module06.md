@@ -11,6 +11,12 @@ Label hanyalah area di mana teks ditampilkan. Misalnya, kode berikut mencetak la
 var label = ui.Label('Cool label!');
 print(label);
 
+Yang terlihat seperti:
+
+
+
+
+
 
 ## Earth Engine Apps 
  
