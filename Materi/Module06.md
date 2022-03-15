@@ -1,4 +1,18 @@
- ## Earth Engine Apps 
+## Tampilan User Interface 
+
+### Widget
+
+Ada berbagai widget yang dapat Anda gunakan untuk membangun UI. Widget ini termasuk tombol, kotak centang, bilah geser, kotak teks, dan menu pilihan. Widget hanya dapat dicetak atau ditambahkan ke panel satu kali. Bagian berikut mengilustrasikan fungsionalitas dasar, tampilan, dan nuansa widget. Lihat bagian Gaya untuk informasi selengkapnya tentang menata widget Anda. Contoh berikut cukup print() widget ke konsol. Untuk detail tentang menambahkan widget ke panel, lihat halaman Panel dan Tata Letak.
+
+- ui.Label
+Label hanyalah area di mana teks ditampilkan. Misalnya, kode berikut mencetak label:
+
+
+var label = ui.Label('Cool label!');
+print(label);
+
+
+## Earth Engine Apps 
  
  ### Pendahuluan
 
@@ -33,4 +47,13 @@ Pada tampilan tersebut, pilih nama Aplikasi, pilih Proyek Google Cloud, dan tent
 
 ![image](https://user-images.githubusercontent.com/69818715/158385797-b00e19ab-90a5-49bd-a31f-bf4b3bfc14e8.png)
 
-- 
+### Mengatur Aplikasi
+
+Untuk mengelola Aplikasi dari _Code Editor_, selanjutnya buka panel Manajemen Aplikasi dengan mengklik tombol Aplikasi di atas bagian skrip di Editor Kode. Dari sini Anda dapat memperbarui konfigurasi Aplikasi atau menghapus aplikasi.
+
+![image](https://user-images.githubusercontent.com/69818715/158387897-dfdd1329-fdd8-48d5-af62-6dd3c7ce71af.png)
+
+### Contoh Aplikasi Google Earth Engine 
+
+![image](https://user-images.githubusercontent.com/69818715/158388569-03cf1c60-aeaf-4f91-aea7-3c3232d059f2.png)
+
