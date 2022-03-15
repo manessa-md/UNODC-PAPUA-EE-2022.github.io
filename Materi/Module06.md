@@ -5,13 +5,86 @@
 Ada berbagai widget yang dapat Anda gunakan untuk membangun UI. Widget ini termasuk tombol, kotak centang, bilah geser, kotak teks, dan menu pilihan. Widget hanya dapat dicetak atau ditambahkan ke panel satu kali. Bagian berikut mengilustrasikan fungsionalitas dasar, tampilan, dan nuansa widget. Lihat bagian Gaya untuk informasi selengkapnya tentang menata widget Anda. Contoh berikut cukup print() widget ke konsol. Untuk detail tentang menambahkan widget ke panel, lihat halaman Panel dan Tata Letak.
 
 - ui.Label
+
 Label hanyalah area di mana teks ditampilkan. Misalnya, kode berikut mencetak label:
 
-
+```
 var label = ui.Label('Cool label!');
 print(label);
+```
 
 Yang terlihat seperti:
+
+![image](https://user-images.githubusercontent.com/69818715/158390326-22d35743-e94c-46e5-8314-310b1b9d71f5.png)
+
+Pisahkan label panjang dengan memasukkan karakter baris baru (\n) dan atur argumen properti gaya whiteSpace ke 'pra':
+
+```
+print(ui.Label('Here is a:\nnew line', {whiteSpace: 'pre'}));
+```
+
+- ui.Button
+
+Button adalah widget UI interaktif yang dapat diklik. Anda dapat menentukan fungsi yang akan dipanggil (fungsi "panggilan balik") saat pengguna mengklik tombol. (Untuk informasi lebih lanjut tentang penanganan acara dengan fungsi panggilan balik, lihat halaman Acara). Contoh berikut mencetak pusat peta saat ini ketika tombol diklik:
+```
+var button = ui.Button({
+  label: 'Get Map Center',
+  onClick: function() {
+    print(Map.getCenter());
+  }
+});
+print(button);
+```
+
+Yang terlihat seperti:
+
+![image](https://user-images.githubusercontent.com/69818715/158391384-a271afcf-a737-46b0-a8fc-2c02f035d5d6.png)
+
+- ui.CheckBox
+
+Checkbox adalah widget yang memungkinkan pengguna mencentang (atau menghapus centang) sebuah kotak. Saat status kotak centang berubah, panggilan balik yang terdaftar ke widget akan diberikan nilai boolean yang menunjukkan apakah kotak centang sekarang dicentang. Sebagai contoh:
+
+```
+var checkbox = ui.Checkbox('Show SRTM layer', true);
+
+checkbox.onChange(function(checked) {
+  // Shows or hides the first map layer based on the checkbox's value.
+  Map.layers().get(0).setShown(checked);
+});
+
+Map.addLayer(ee.Image('CGIAR/SRTM90_V4'));
+print(checkbox);
+```
+
+Kotak centang yang dicetak akan terlihat seperti:
+
+![image](https://user-images.githubusercontent.com/69818715/158392707-52395a86-1b96-4937-9f1a-a38917359b3f.png)
+
+Perhatikan bahwa mencentang kotak akan mengaktifkan lapisan yang ditampilkan di peta. Seperti komponen UI lainnya, Peta Editor Kode dapat dimanipulasi secara terprogram. Pelajari lebih lanjut tentang objek Peta di halaman Panel dan Tata Letak.
+
+- ui.Slider
+
+slider adalah widget yang memungkinkan pengguna menyesuaikan slider untuk mendapatkan nomor dalam rentang slider. Konfigurasikan rentang menggunakan konstruktor atau dengan mengatur properti penggeser. Contoh berikut menggunakan penggeser untuk mengatur opasitas lapisan pertama pada Peta:
+
+```
+var slider = ui.Slider();
+
+slider.setValue(0.9);  // Set a default value.
+slider.onChange(function(value) {
+  Map.layers().get(0).setOpacity(value);
+});
+
+Map.addLayer(ee.Image(255), {palette: 'blue'});
+print(slider);
+```
+
+
+
+```
+
+```
+
+
 
 
 
