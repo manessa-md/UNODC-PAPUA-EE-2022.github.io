@@ -26,8 +26,8 @@ var S22021 = ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED')
                   .filter(ee.Filter.lt('CLOUDY_PIXEL_PERCENTAGE',10))
                   .map(maskS2clouds)
                   .mean();
-var S22018 = ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED')
-                  .filterDate('2018-01-01', '2018-12-30')
+var S22019 = ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED')
+                  .filterDate('2019-01-01', '2019-12-30')
                   .filter(ee.Filter.bounds(geometry))
                   // Pre-filter to get less cloudy granules.
                   .filter(ee.Filter.lt('CLOUDY_PIXEL_PERCENTAGE',10))
@@ -35,7 +35,7 @@ var S22018 = ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED')
                   .mean();
                   
 print('S22021 : ', S22021)                  
-print('S22018 : ', S22018)
+print('S22019 : ', S22019)
 
 var visualization = {
   min: 0.0, 
@@ -44,7 +44,7 @@ var visualization = {
 };
 
 Map.addLayer(S22021, visualization, 'RGB');
-Map.addLayer(S22018, visualization, 'RGB');
+Map.addLayer(S22019, visualization, 'RGB');
 
 // 2. NDVI formula
 
@@ -55,11 +55,11 @@ var addNDVI = function(image) {
 };
 
 //aplikasin fungsi kepada citra S2 yang sudah didefinisikan terlebih dahulu
-var S2ndvi2018 = addNDVI(S22018);
+var S2ndvi2019 = addNDVI(S22019);
 var S2ndvi2021 = addNDVI(S22021);
 
 // check data dengan print
-print(S2ndvi2018);
+print(S2ndvi2019);
 print(S2ndvi2021);
 
 
@@ -71,11 +71,11 @@ var visualizationNDVI = {
 };
 
 Map.addLayer(S2ndvi2021, visualizationNDVI, 'NDVI 2021')
-Map.addLayer(S2ndvi2018, visualizationNDVI, 'NDVI 2018')
+Map.addLayer(S2ndvi2019, visualizationNDVI, 'NDVI 2019')
 
 
 // Identifikasi area yang berubah
-var degradasi = S2ndvi2018.select('NDVI').subtract(S2ndvi2021.select('NDVI')).rename('NDVI')
+var degradasi = S2ndvi2019.select('NDVI').subtract(S2ndvi2021.select('NDVI')).rename('NDVI')
 
 print(degradasi)
 
