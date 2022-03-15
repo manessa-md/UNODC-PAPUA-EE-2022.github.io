@@ -75,7 +75,7 @@ Map.addLayer(S2ndvi2019, visualizationNDVI, 'NDVI 2019')
 
 
 // Identifikasi area yang berubah
-var degradasi = S2ndvi2019.select('NDVI').subtract(S2ndvi2021.select('NDVI')).rename('NDVI')
+var degradasi = S2ndvi2019.select('NDVI').subtract(S2ndvi2021.select('NDVI')).rename('Degradasi')
 
 print(degradasi)
 
