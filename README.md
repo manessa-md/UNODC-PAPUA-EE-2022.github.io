@@ -38,7 +38,7 @@ Setelah mengikuti pelatihan ini peserta pelatihan diharapkan mampu:
 **Module Pelatihan dapat diakses pada link berikut:**
 1. [Module 1: Dasar Coding Java Script dan Pengenalan aplikasi Google Earth Engine](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Materi/Module01.md)
 2. [Module 2: Dasar Google Earth Engine](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Materi/Module02.md)
-3. [Module 3: Identifikasi vegetasi dan non vegetasi berbasis Index Vegetasi multispectral dan SAR](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Materi/Module03.md)
+3. [Module 3: Identifikasi vegetasi dan non vegetasi berbasis Index Vegetasi multispectral dan SAR](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Materi/Modelu03.md)
 4. [Module 4: Klasifikasi hutan dan non-hutan dengan metode machine learning](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Materi/Module04.md)
 5. [Module 5: Timeseries analisis untuk monitoring hutan](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Materi/Module05.md)
 6. [Module 6: Aplikasi monitoring hutan](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Materi/Module06.md)
