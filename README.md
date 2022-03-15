@@ -46,6 +46,7 @@ Setelah mengikuti pelatihan ini peserta pelatihan diharapkan mampu:
 
 -------------
 
-[https://code.earthengine.google.com/b3605f6aa77402824a38150508d22182](https://code.earthengine.google.com/b3605f6aa77402824a38150508d22182) 
-[https://code.earthengine.google.com/c6598ae89cdec607f5e81eafd061d04d](https://code.earthengine.google.com/c6598ae89cdec607f5e81eafd061d04d)
-
+## Contoh Aplikasi
+[Fair BRI Project](https://masitamanessa.users.earthengine.app/view/bri-vegetationloss-v2)
+[Area Tergenang](https://masitamanessa.users.earthengine.app/view/rob-manessa-app)
+[Cahaya Lampu Malam Kota](https://masitamanessa.users.earthengine.app/view/night-light-manessa)
