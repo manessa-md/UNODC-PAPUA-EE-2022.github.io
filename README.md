@@ -47,6 +47,6 @@ Setelah mengikuti pelatihan ini peserta pelatihan diharapkan mampu:
 -------------
 
 ## Contoh Aplikasi
-[Fair BRI Project](https://masitamanessa.users.earthengine.app/view/bri-vegetationloss-v2)
-[Area Tergenang](https://masitamanessa.users.earthengine.app/view/rob-manessa-app)
-[Cahaya Lampu Malam Kota](https://masitamanessa.users.earthengine.app/view/night-light-manessa)
+1. [Fair BRI Project](https://masitamanessa.users.earthengine.app/view/bri-vegetationloss-v2)
+2. [Area Tergenang](https://masitamanessa.users.earthengine.app/view/rob-manessa-app)
+3. [Cahaya Lampu Malam Kota](https://masitamanessa.users.earthengine.app/view/night-light-manessa)
