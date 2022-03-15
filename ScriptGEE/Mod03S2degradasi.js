@@ -79,4 +79,13 @@ var degradasi = S2ndvi2018.select('NDVI').subtract(S2ndvi2021.select('NDVI'))
 
 print(degradasi)
 
+var visualizationDeg = {
+  min: -0.5, 
+  max: 0.5,
+  bands: ['Degradasi'],
+  palette: ["3d9537","ffffff","950b05"],
+};
+
+Map.addLayer(degradasi, visualizationDeg, "Degradasi");
+
 Map.addLayer(degradasi, {}, "Degradasi")
