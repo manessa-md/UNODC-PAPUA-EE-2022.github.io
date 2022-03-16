@@ -31,11 +31,14 @@ Setelah mengikuti pelatihan ini peserta pelatihan diharapkan mampu:
 
 
 **Materi Presentasi dapat diakses pada link berikut:**
+
 1. [Dasar Penginderaan Jauh](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Presentasi/01_BasicRS.pdf)
 2. [Penginderaan Jauh Kehutanan](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Presentasi/02_RSforest.pdf)
 3. [Pengenalan GEE](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Presentasi/03_GEE%20Indonesia%20hands-on%202022.pdf)
 
+
 **Module Pelatihan dapat diakses pada link berikut:**
+
 1. [Module 1: Dasar Coding Java Script dan Pengenalan aplikasi Google Earth Engine](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Materi/Module01.md)
 2. [Module 2: Dasar Google Earth Engine](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Materi/Module02.md)
 3. [Module 3: Identifikasi vegetasi dan non vegetasi berbasis Index Vegetasi multispectral dan SAR](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Materi/Modelu03.md)
@@ -56,6 +59,7 @@ Setelah mengikuti pelatihan ini peserta pelatihan diharapkan mampu:
 
 -------------
 ## Contoh Aplikasi
+
 1. [Fair BRI Project](https://masitamanessa.users.earthengine.app/view/bri-vegetationloss-v2)
 2. [Area Tergenang](https://masitamanessa.users.earthengine.app/view/rob-manessa-app)
 3. [Cahaya Lampu Malam Kota](https://masitamanessa.users.earthengine.app/view/night-light-manessa)
