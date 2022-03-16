@@ -63,4 +63,4 @@ Setelah mengikuti pelatihan ini peserta pelatihan diharapkan mampu:
 -------------
 ## Aplikasi Peserta
 
-[Andi](https://code.earthengine.google.com/78e61e19189253a17af3862a55d007ba)
+[Andi](https://code.earthengine.google.com/50dfaefb4846ddcaf23d4b8eeb78a2e3)
