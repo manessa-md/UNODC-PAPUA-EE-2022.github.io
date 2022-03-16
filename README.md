@@ -51,8 +51,10 @@ Setelah mengikuti pelatihan ini peserta pelatihan diharapkan mampu:
 -------------
 
 ## [PlanetScope Data](https://drive.google.com/file/d/1KitUCD6-JkAoUnjZghw35yEJ78_5KIZs/view?usp=sharing)
-
 -------------
+
+[Script buka data planet](https://code.earthengine.google.com/7b1082103f05de0f642069a009e90223)
+
 ## Contoh Aplikasi
 1. [Fair BRI Project](https://masitamanessa.users.earthengine.app/view/bri-vegetationloss-v2)
 2. [Area Tergenang](https://masitamanessa.users.earthengine.app/view/rob-manessa-app)
