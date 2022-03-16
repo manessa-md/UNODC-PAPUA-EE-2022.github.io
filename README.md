@@ -47,6 +47,7 @@ Setelah mengikuti pelatihan ini peserta pelatihan diharapkan mampu:
 
 ## Youtube 
 
+(https://youtube.com/playlist?list=PLamjiWpYfFYj6qap_3eV29OH5vZ-Bh07Z)[https://youtube.com/playlist?list=PLamjiWpYfFYj6qap_3eV29OH5vZ-Bh07Z]
 
 -------------
 
