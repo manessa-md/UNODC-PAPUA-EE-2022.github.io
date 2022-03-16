@@ -47,7 +47,7 @@ Setelah mengikuti pelatihan ini peserta pelatihan diharapkan mampu:
 
 ## Youtube 
 
-(Youtube Earth Engine)[https://youtube.com/playlist?list=PLamjiWpYfFYj6qap_3eV29OH5vZ-Bh07Z]
+[Youtube Earth Engine](https://youtube.com/playlist?list=PLamjiWpYfFYj6qap_3eV29OH5vZ-Bh07Z)
 
 -------------
 
