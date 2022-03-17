@@ -78,5 +78,5 @@ Setelah mengikuti pelatihan ini peserta pelatihan diharapkan mampu:
 7. [Ibu Belle _Tree Lost Cover_ Jayapura Utara](https://pramayudar.users.earthengine.app/view/tree-lost-cover-jayapura-utara)
 8. [Ibu Nur Hayati _Timeseries_ Nilai NDVI KPH53 Boven Digul](https://assajjadazis.users.earthengine.app/view/kph53)
 9. [Ibu Desiana Hotspot Kabupaten dan Kota Jayapura](https://advilourdes77.users.earthengine.app/view/hotspot-kabupaten-dan-kota-jayapura)
-10.[Ibu Roselia Kawasan Hutan Kabupaten dan Kota Jayapura](https://rosela1278.users.earthengine.app/view/forest-jayapura)
+10. [Ibu Roselia Kawasan Hutan Kabupaten dan Kota Jayapura](https://rosela1278.users.earthengine.app/view/forest-jayapura)
 
