@@ -69,4 +69,14 @@ Setelah mengikuti pelatihan ini peserta pelatihan diharapkan mampu:
 -------------
 ## Aplikasi Peserta
 
-[Andi](https://code.earthengine.google.com/50dfaefb4846ddcaf23d4b8eeb78a2e3)
+[Bapak Andi Cadangan Karbon Pegunungan Cyclops](https://andiwanane780.users.earthengine.app/view/carboncacycloop)
+[Bapak Bambang Titik Api Kabupaten Merauke](https://bangebpl.users.earthengine.app/view/titikapimerauke)
+[Bapak Markus Perubahan Lahan Hutan Akibat Pembalakan Liar](https://iriandodonz.users.earthengine.app/view/bate)
+[Bapak Isack Perubahan Nilai NDVI Pada Beberapa Titik di Kabupaten Sarmi](https://isackimbiri18.users.earthengine.app/view/sarmiisack)
+[Bapak Donna Fernandez Titik Api Wilayah Kabupaten Jayapura](https://pramayudar.users.earthengine.app/view/donnafernandez)
+[Bapak Agus Rieuwpassa Kebakaran Hutan Kabupaten/Kota Jayapura](https://assajjadazis.users.earthengine.app/view/karhutla-kabkota-jpr)
+[Ibu Belle _Tree Lost Cover_ Jayapura Utara](https://pramayudar.users.earthengine.app/view/tree-lost-cover-jayapura-utara)
+[Ibu Nur Hayati _Timeseries_ Nilai NDVI KPH53 Boven Digul](https://assajjadazis.users.earthengine.app/view/kph53)
+[Ibu Desiana Hotspot Kabupaten dan Kota Jayapura](https://advilourdes77.users.earthengine.app/view/hotspot-kabupaten-dan-kota-jayapura)
+[Ibu Roselia Kawasan Hutan Kabupaten dan Kota Jayapura](https://rosela1278.users.earthengine.app/view/forest-jayapura)
+
