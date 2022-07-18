@@ -89,8 +89,9 @@ Tahapan ini bertujuan untuk memberikan warna pada data raster. Pemberian warna p
 
 Terdapat beberapa pengaturan pada symbology yaitu sebagai berikut:
 * Pada Render Type terdapat beberapa jenis pewarnaan, pilih Singleband pseudocolor.
-* Pada Min dan Max merupakan nilai raster terkecil dan terbesar yang ingin ditampilkan.
+* Pada Min dan Max merupakan nilai raster terkecil dan terbesar yang ingin ditampilkan.  
 Pada modul ini, ditentukan nilai terkecil adalah 0 dan nilai terbesar adalah 1.
+
 * Pada Color Ramp terdiri dari berbagai macam warna, pilih warna yang ingin ditampilkan.
 * Klik OK
 
@@ -151,14 +152,14 @@ Berikut merupakan tahapan dalam menambahkan peta pada layout:
 ### 4. Mengatur Skala Peta
 Tahapan ini bertujuan untuk mengatur skala peta yang akan digunakan. Sehingga, tampilan peta akan sesuai dengan layer dasar layout.
 
-Pengaruran skala peta berada pada bagian Item Properties. Berikut merupakan penjelasan mengenai tahapan pengaturan skala peta:
+Pengaturan skala peta berada pada bagian Item Properties. Berikut merupakan penjelasan mengenai tahapan pengaturan skala peta:
 
 * Pada Scale, tentukan skala peta dengan menyesuaikan batasan informasi yang ingin disampaikan
 * Pada Layers, centang bagian Lock Layers, bertujuan untuk mengunci layer peta sehingga tidak berubah-ubah
 
 ![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/5cbef124b886c0722a3418591d6627110507e7e0/Image/Mod08/Mod08-Visualisasi-18.jpg)
 
-* Pada Background, dapat diberikan warna pada dasar peta.
+* Pada Background, dapat diberikan warna pada dasar peta.  
 Warna akan muncul pada peta yang tidak terdapat data raster maupun vektor. Pemilihan warna juga dapat disesuaikan dengan informasi spasial sebenarnya. Pada modul ini background peta berada pada wilayah perairan laut sehingga digunakan warna biru.
 
 ![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/5cbef124b886c0722a3418591d6627110507e7e0/Image/Mod08/Mod08-Visualisasi-19.jpg)
@@ -176,8 +177,8 @@ Berikut merupakan tahapan dalam memberi label pada layout:
 
 ![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/5cbef124b886c0722a3418591d6627110507e7e0/Image/Mod08/Mod08-Visualisasi-21.jpg)
 
-* Melakukan pengaturan pada bagian Item Properties
-Pada Main Properties, tuliskan informasi yang ingin disampaikan.
+* Melakukan pengaturan pada bagian Item Properties  
+Pada Main Properties, tuliskan informasi yang ingin disampaikan.  
 Pada Appearance, dilakukan pengaturan mengenai font, ukuran, serta posisi tulisan.
 
 ![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/5cbef124b886c0722a3418591d6627110507e7e0/Image/Mod08/Mod08-Visualisasi-22.jpg)
@@ -216,30 +217,30 @@ Berikut merupakan tahapan dalam memberi legenda pada layout:
 
 Lakukan beberapa pengaturan legenda pada bagian Item Properties
 
-* Pada Legend Items, uncheck kolom Auto Update
-Anda dapat menambahkan (+), mengurangi (-), dan menyesuaikan urutan legenda
+* Pada Legend Items, uncheck kolom Auto Update  
+Anda dapat menambahkan (+), mengurangi (-), dan menyesuaikan urutan legenda  
 Pada modul ini, klik (-) untuk mengurangi legenda yang tidak diperlukan yaitu batas administasi dan adm jayapura
 
 ![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/5cbef124b886c0722a3418591d6627110507e7e0/Image/Mod08/Mod08-Visualisasi-28.jpg)
 
-* Klik dua kali pada legenda berupa teks
+* Klik dua kali pada legenda berupa teks  
 Dapat melakukan perubahan tulisan sesuai yang diinginkan
 
 ![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/5cbef124b886c0722a3418591d6627110507e7e0/Image/Mod08/Mod08-Visualisasi-29.jpg)
 
-* Klik dua kali pada legenda berupa simbol
-Dapat merubah simbol legenda
-Pada Patch, atur width dan height sesuai yang diinginkan
+* Klik dua kali pada legenda berupa simbol  
+Dapat merubah simbol legenda  
+Pada Patch, atur width dan height sesuai yang diinginkan  
 Pada layout orientation, atur posisi simbol legenda (horizontal atau vertikal)
 
 ![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/5cbef124b886c0722a3418591d6627110507e7e0/Image/Mod08/Mod08-Visualisasi-30.jpg)
 
-* Lakukan pengaturan pada bagian fonts and text formatting
+* Lakukan pengaturan pada bagian fonts and text formatting  
 Pengaturan font dan format text disesuain dengan keinginan anda
 
 ![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/5cbef124b886c0722a3418591d6627110507e7e0/Image/Mod08/Mod08-Visualisasi-31.jpg)
 
-* Klik Uncheck pada kolom background
+* Klik Uncheck pada kolom background  
 Sehingga, legenda tidak memiliki warna background
 
 ![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/5cbef124b886c0722a3418591d6627110507e7e0/Image/Mod08/Mod08-Visualisasi-32.jpg)
@@ -261,6 +262,14 @@ Agar lebih menarik, dapat diberikan warna background pada label yaitu sebagai be
 ![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/5cbef124b886c0722a3418591d6627110507e7e0/Image/Mod08/Mod08-Visualisasi-34.jpg)
 
 Hasil pemberian keterangan dan sumber pada layout peta ialah sebagai berikut:
+
+![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/a6548586d286e1f8e32a2dc709c80062e946748b/Image/Mod08/Mod08-Visualisasi-35.jpg)
+
+## HASIL LAYOUT PETA
+Berikut merupakan beberapa hasil layout peta yang dapat dihasilkan melalui aplikasi QGIS :
+
+![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/a6548586d286e1f8e32a2dc709c80062e946748b/Image/Mod08/Mod08-Visualisasi-35.jpg)
+
 
 
 
