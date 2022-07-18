@@ -24,7 +24,7 @@ Setelah mengikuti pelatihan ini peserta pelatihan diharapkan mampu:
 4. Mengakses data raster penginderaan jauh dari Google Earth Engine
 5. Menerapkan algoritme indeks vegetasi ke data Sentinel-1 dan Sentinel-2 di Google Earth Engine
 6. Memvisualisasikan plot deret waktu di Google Earth Engine
-7. Membuat aplikasi sederhana di Google Earth Engine
+7. Membuat infografis spasial
 -------------
 
 ## Materi Pelatihan
