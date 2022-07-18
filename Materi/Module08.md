@@ -97,7 +97,7 @@ Pada modul ini, ditentukan nilai terkecil adalah 0 dan nilai terbesar adalah 1.
 
 Pengaturan dapat dilakukan seperti sebagai berikut:
 
-![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/5cbef124b886c0722a3418591d6627110507e7e0/Image/Mod08/Mod08-Visualisasi-11.jpg)
+![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/852be8baed420f991bf5de497c8ca601c7f1b763/Image/Mod08/Mod08-Visualisasi-11.jpg)
 
 ### 3. Hasil Symbology Data
 Warna berhasil diberikan pada data raster.
@@ -263,15 +263,12 @@ Agar lebih menarik, dapat diberikan warna background pada label yaitu sebagai be
 
 Hasil pemberian keterangan dan sumber pada layout peta ialah sebagai berikut:
 
-![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/a6548586d286e1f8e32a2dc709c80062e946748b/Image/Mod08/Mod08-Visualisasi-35.jpg)
+![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/852be8baed420f991bf5de497c8ca601c7f1b763/Image/Mod08/Mod08-Visualisasi-35.jpg)
 
 ## HASIL LAYOUT PETA
 Berikut merupakan beberapa hasil layout peta yang dapat dihasilkan melalui aplikasi QGIS :
 
-![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/a6548586d286e1f8e32a2dc709c80062e946748b/Image/Mod08/Mod08-Visualisasi-35.jpg)
-
-
-
+![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/852be8baed420f991bf5de497c8ca601c7f1b763/Image/Mod08/Mod08-Visualisasi-35.jpg)
 
 
 
