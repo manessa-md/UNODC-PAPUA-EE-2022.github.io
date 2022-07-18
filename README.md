@@ -13,6 +13,8 @@ Setelah terdaftar, Anda dapat mengakses Earth Engine environment pada link berik
 
 https://code.earthengine.google.com
 
+Mendownload dan menginstall aplikasi QGIS pada link berikut:
+
 -------------
 
 ## Tujuan Pelatihan
