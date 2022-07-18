@@ -1,4 +1,4 @@
-#Export Data dari GEE
+#**Export Data dari GEE**
 
 Data citra Sentinel dengan fungsi NDVI dan RVI yang telah diolah pada platform GEE, selanjutnya akan dilakukan visualisasi data dengan output yang dihasilkan adalah Peta. Dihasilkannya Peta bertujuan untuk memudahkan dalam menginterpretasi data, sehingga dapat dengan mudah dimengerti oleh setiap pembaca. Visualisasi peta dapat dilakukan pada software QGIS. Sebelum melakukan visualisasi pada peta, terlebih dahulu dilakukan proses pengunduhan data dalam format (.tiff) dari platform GEE ke PC anda.
 
