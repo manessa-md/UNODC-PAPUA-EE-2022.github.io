@@ -5,7 +5,7 @@ Data citra Sentinel dengan fungsi NDVI dan RVI yang telah diolah pada platform G
 Berikut merupakan langkah-langkah pengunduhan data pada GEE:
 
 ## Proses Export Data (.Tiff)
-### 1. Masukan Script Export Data, Kemudian Klik "Run" untuk menjalankan Script
+### 1. Masukan Script Export Data, Kemudian Klik "Run" Untuk Menjalankan Script
 Script export data bertujuan untuk mengekstrak data dalam format (.tiff) ke dalam folder Google Drive anda.
 
 ```
@@ -24,7 +24,7 @@ Export.image.toDrive({
 ```
 ![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/5ba348e3a185d3e9513bd51d793f1669faeec6ea/Image/Mod06/Mod06-Export-01.png)
 
-### 2. Klik Tombol Task yang berada disebelah Tombol Console
+### 2. Klik Tombol Task Yang Berada Disebelah Tombol Console
 Pada Tombol Task akan terlihat nama file yang akan diunduh, kemudian klik "RUN"
 
 ![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/66084a4d1544c7b7007af183809c551c5316f022/Image/Mod06/Mod06-Export-02.png)
