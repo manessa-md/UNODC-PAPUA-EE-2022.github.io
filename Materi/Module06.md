@@ -22,4 +22,4 @@ Export.image.toDrive({
 });
 
 ```
-![image] (https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/5ba348e3a185d3e9513bd51d793f1669faeec6ea/Image/Mod06/Mod06-Export-01.png)
+![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/5ba348e3a185d3e9513bd51d793f1669faeec6ea/Image/Mod06/Mod06-Export-01.png)
