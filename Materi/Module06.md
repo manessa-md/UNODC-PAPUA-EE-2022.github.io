@@ -1,4 +1,4 @@
-# Export Data dari GEE
+# EXPORT DATA DARI GOOGLE EARTH ENGINE
 
 Data citra Sentinel dengan fungsi NDVI dan RVI yang telah diolah pada platform GEE, selanjutnya akan dilakukan visualisasi data dengan output yang dihasilkan adalah Peta. Dihasilkannya Peta bertujuan untuk memudahkan dalam menginterpretasi data, sehingga dapat dengan mudah dimengerti oleh setiap pembaca. Visualisasi peta dapat dilakukan pada software QGIS. Sebelum melakukan visualisasi pada peta, terlebih dahulu dilakukan proses pengunduhan data dalam format (.tiff) dari platform GEE ke PC anda.
 
@@ -29,7 +29,7 @@ Pada Tombol Task akan terlihat nama file yang akan diunduh, kemudian klik "RUN"
 
 ![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/66084a4d1544c7b7007af183809c551c5316f022/Image/Mod06/Mod06-Export-02.png)
 
-### 3. Informasi mengenai data yang akan diunduh
+### 3. Informasi Mengenai Data Yang Akan Diunduh
 
 Pada gambar dapat terlihat beberapa informasi seperti nama file, sistem koordinat, skala data, tempat penyimpanan folder google drive, dan format file.
 
@@ -48,18 +48,18 @@ Setelah mengatur beberapa informasi tersebut, Klik "Run"
 
 ![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/66084a4d1544c7b7007af183809c551c5316f022/Image/Mod06/Mod06-Export-03.png)
 
-### 4. Proses pengunduhan data
+### 4. Proses Pengunduhan Data
 Setelah mengklik "Run" akan muncul tampilan sebagai berikut. Kemudian, tunggu hingga data selesai terunduh
 
 ![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/66084a4d1544c7b7007af183809c551c5316f022/Image/Mod06/Mod06-Export-04.png)
 
-### 5. Data berhasil terunduh pada Folder Google Drive
+### 5. Data Berhasil Terunduh Pada Folder Google Drive
 Pada gambar dapat terlihat data yang berhasil terunduh akan langsung tersimpan pada folder Google Drive yang telah ditentukan sebelumnya.
 Kemudian, data pada Google Drive diunduh kembali agar data dapat tersimpan pada folder PC anda.
 
 ![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/66084a4d1544c7b7007af183809c551c5316f022/Image/Mod06/Mod06-Export-05.png)
 
-### 6. Data berhasil terunduh pada Folder PC
+### 6. Data Berhasil Terunduh Pada Folder PC
 Data yang telah berhasil terunduh dapat dilihat pada folder download di PC anda.
 Kemudian, data siap untuk lanjut ke tahapan visualisasi yang dilakukan pada sofware QGIS
 
