@@ -270,7 +270,7 @@ Berikut merupakan beberapa hasil layout peta yang dapat dihasilkan melalui aplik
 
 ![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/852be8baed420f991bf5de497c8ca601c7f1b763/Image/Mod08/Mod08-Visualisasi-35.jpg)
 
-
+![image](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/64656b1be8aa13116958c586916f5af1b5929f4e/Image/Mod08/Mod08-Visualisasi-36.jpeg)
 
 
 
