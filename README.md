@@ -46,9 +46,9 @@ Setelah mengikuti pelatihan ini peserta pelatihan diharapkan mampu:
 3. [Module 3: Identifikasi vegetasi dan non vegetasi berbasis Index Vegetasi multispectral dan SAR](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Materi/Modelu03.md)
 4. [Module 4: Timeseries analisis untuk monitoring hutan](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Materi/Module04.md)
 5. [Module 5: Aplikasi monitoring hutan](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Materi/Module05.md)
-6. [Module 6: Export data dari GEE]()
-7. [Module 7: Aplikasi QGIS]()
-8. [Module 8: Visualisasi Data Spasial](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/923a02d58823aac0f4de0cebbfd60a5d17e0d1a7/Materi/Module08.md)
+6. [Module 6: Export data dari GEE](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Materi/Module06.md)
+7. [Module 7: Aplikasi QGIS](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Materi/Module07.md)
+8. [Module 8: Visualisasi Data Spasial](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Materi/Module08.md)
 -------------
 
 ## Youtube 
