@@ -68,22 +68,4 @@ Map.addLayer(S2.first(), visualization, 'RGB');
 <img width="960" alt="Mod2-S2-05" src="https://user-images.githubusercontent.com/69818715/158046321-e8326070-d054-46bc-9505-95de5cf49336.png">
 Gambar 17. Tampilan Visualisasi Citra Sentinel-2
 
-### Memilih Visualisasi Data Image dari ImageCollection
 
-Pada tahap visualisasi juga dapat memungkinkan untuk menampilkan beberapa image dari Image Collection sentinel-2. Hal tersebut dilakukan untuk memilih image yang sesuai untuk divisualisasikan atau untuk tujuan perbandingan antar image. Pemilihan tampilan image diawali dengan perintah ```.toList()``` dan dilanjutkan dengan ```.get()```.
-
-```
-var listOfImages = S2.toList(S2.size());
-var img1 = ee.Image(listOfImages.get(0));
-var img2 = ee.Image(listOfImages.get(1));
-
-print(img2)
-
-Map.addLayer(img2, visualization, 'img2');
-```
-
-![2](https://user-images.githubusercontent.com/69818715/158046578-27a6a614-0a32-403f-9dc0-40bf978145d3.JPG)
-Gambar 18. Tampilan Hasil Pemilihan Data Image
-
-
-[Script](https://code.earthengine.google.com/a18be3676d9bb2c0af4c8a4f964aff9c)
