@@ -34,10 +34,11 @@ Setelah mengikuti pelatihan ini peserta pelatihan diharapkan mampu:
 
 **Materi Presentasi dapat diakses pada link berikut:**
 
-1. [Dasar Penginderaan Jauh](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Presentasi/01_BasicRS.pdf)
+1. [Dasar Penginderaan Jauh](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Presentasi/01_BasicRS-July2022.pdf)
 2. [Penginderaan Jauh Kehutanan](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Presentasi/02_RSforest.pdf)
 3. [Pengenalan GEE](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Presentasi/03_GEE%20Indonesia%20hands-on%202022.pdf)
-
+4. [Index Vegetasi](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Presentasi/04_Index.pdf)
+5. [GEE Apps](https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Presentasi/06_Apps%20GEE%20Indonesia%20hands-on%202022.pdf)
 
 **Module Pelatihan dapat diakses pada link berikut:**
 
