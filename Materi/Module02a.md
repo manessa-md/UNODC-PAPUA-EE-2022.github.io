@@ -7,14 +7,14 @@ Module 2 Dasar Koding
 Pemilihan citra bisa dilakukan dengan mencari pada tabel pencarian dengan memasukan _keyword_ nama citra satelit "Sentinel-2".
 
 <img width="960" alt="Mod2-S2-01" src="https://user-images.githubusercontent.com/69818715/158024527-fa08e8f8-bf59-4cff-b4ff-4381af3abc15.png">
-Gambar 14. Tampilan Search Dataset Citra
+Gambar 1. Tampilan Search Dataset Citra
 
 ### Memahami Informasi Citra Sentinel-2
 
 Agar data citra satelit yang kita pilih sesuai dengan yang kita inginkan, maka perlu untuk _cross check_ data tersebut dengan memahami informasi terkait data citranya. Cara untuk mengetahui informasi dengan _klik_ citra yang hendak kita pilih, pada latihan kali ini menggunakan data citra Sentinel-2 level 2A, setelah itu akan tampil informasi citra seperti pada gambar berikut:
 
 <img width="960" alt="Mod2-S2-02" src="https://user-images.githubusercontent.com/69818715/158025267-f658b97c-4fe1-4b70-ae64-da0efdad71ab.png">
-Gambar 15. Informasi Citra Satelit
+Gambar 2. Informasi Citra Satelit
 
 ### Memanggil data Citra Sentinel-2
 
@@ -49,7 +49,7 @@ print(S2)
 ```
 
 <img width="960" alt="Mod2-S2-04" src="https://user-images.githubusercontent.com/69818715/158045788-dbe83ba5-d384-4390-af9a-07c0882fa96e.png">
-Gambar 16. Tampilan Coding Load dan Filtering Citra Satelit
+Gambar 3. Tampilan Coding Load dan Filtering Citra Satelit
 
 ### Visualisasi Citra Sentinel-2
 
@@ -66,13 +66,13 @@ Map.addLayer(S2.first(), visualization, 'RGB');
 ```
 
 <img width="960" alt="Mod2-S2-05" src="https://user-images.githubusercontent.com/69818715/158046321-e8326070-d054-46bc-9505-95de5cf49336.png">
-Gambar 17. Tampilan Visualisasi Citra Sentinel-2
+Gambar 4. Tampilan Visualisasi Citra Sentinel-2
 
 ## 2b. Mengenal Data dan Visualisasi Citra Forest Loss menggunakan Google Earth Engine 
 Pemilihan citra bisa dilakukan dengan mencari pada tabel pencarian dengan memasukan _keyword_ nama citra satelit "Forest Loss".
 
-<img width="960" alt="Mod2-S2-02" src="https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Image/Mod03A/1_eQT7CXrsf0lm3HVxnww_WQ.png">
-Gambar 14. Tampilan Search Dataset Citra
+<img width="960" alt="Mod2-S2-02" src="[https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Image/Mod03A/02A01.jpg">
+Gambar 5. Tampilan Search Dataset Citra
 
 
 
