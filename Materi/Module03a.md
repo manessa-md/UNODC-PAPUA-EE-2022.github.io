@@ -14,7 +14,8 @@ Setelah mendownload data dalam format zip, lakukan proses eksraksi. Pada satu fi
 
 <img width="960" alt="RasterVector" src="https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Image/Mod03A/03a01.png"> 
 
-## upload data ke google earth engine 
+## Upload data ke google earth engine 
+
 
 
 
