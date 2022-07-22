@@ -71,7 +71,7 @@ Gambar 4. Tampilan Visualisasi Citra Sentinel-2
 ## 2b. Mengenal Data dan Visualisasi Citra Forest Loss menggunakan Google Earth Engine 
 Pemilihan citra bisa dilakukan dengan mencari pada tabel pencarian dengan memasukan _keyword_ nama citra satelit "Forest Loss".
 
-<img width="960" alt="Mod2-S2-02" src="[https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Image/Mod03A/02A01.jpg">
+<img width="960" alt="Mod2-S2-02" src="[Image/Mod03A/02A01.jpg">
 Gambar 5. Tampilan Search Dataset Citra
 
 
