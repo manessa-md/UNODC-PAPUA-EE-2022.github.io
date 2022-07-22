@@ -119,9 +119,13 @@ var adminMimika = ee.FeatureCollection("projects/ee-masitamanessa-unodc/assets/M
 
 atau bila ingin memilih kecamatan tertentu
 ```
+var adminMimika = ee.FeatureCollection("projects/ee-masitamanessa-unodc/assets/MIMIKA_ADMINISTRASIKECAMATAN_AR_50K")
+print(adminMimika)
+
 var kecamatan = "Jita";
 var adminMimika = ee.FeatureCollection("projects/ee-masitamanessa-unodc/assets/MIMIKA_ADMINISTRASIKECAMATAN_AR_50K")
                           .filter(ee.Filter.eq('NAMOBJ', kecamatan));
+                          
  ```
 
 menampilkan data
