@@ -183,4 +183,4 @@ script keseluruhan dapat diakes pada link berikut:
 https://code.earthengine.google.com/73e8fda81758c1dc356b14b7930693d8 
 
 
-script automatis pilih distrik: https://code.earthengine.google.com/f9f534249d04b54b6f0d40c2b26870e0 
+script automatis pilih distrik: https://code.earthengine.google.com/56c77058dc0556f42f96e74162cd9074
