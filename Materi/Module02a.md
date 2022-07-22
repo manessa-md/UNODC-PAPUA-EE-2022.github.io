@@ -68,11 +68,39 @@ Map.addLayer(S2.first(), visualization, 'RGB');
 <img width="960" alt="Mod2-S2-05" src="https://user-images.githubusercontent.com/69818715/158046321-e8326070-d054-46bc-9505-95de5cf49336.png">
 Gambar 4. Tampilan Visualisasi Citra Sentinel-2
 
+
 ## 2b. Mengenal Data dan Visualisasi Citra Forest Loss menggunakan Google Earth Engine 
+### Memilih Citra
 Pemilihan citra bisa dilakukan dengan mencari pada tabel pencarian dengan memasukan _keyword_ nama citra satelit "Forest Loss".
 
-<img width="960" alt="Mod2-S2-02" src="https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/349bd1eeb0c0dfc636db26d8e95dd3c7f562bfbf/Image/Mod03A/02A01.jpg">
+<img width="960" alt="Mod2-A-01" src="https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/349bd1eeb0c0dfc636db26d8e95dd3c7f562bfbf/Image/Mod03A/02A01.jpg">
 Gambar 5. Tampilan Search Dataset Citra
+
+### Memahami Informasi Data Forest loss
+Informasi meta data dari data citra penginderaan jauh harus di pahami dengan baik sebelum menggunakannya:
+<img width="960" alt="Mod2-A-02" src="https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/349bd1eeb0c0dfc636db26d8e95dd3c7f562bfbf/Image/Mod03A/02A02.jpg">
+Gambar 5. Tampilan Meta data citra
+
+### Menggunakan data forest loss
+Berikut adalah script dasar untuk menampilkan data forest loss yang terdiri dari tiga bagian: 
+
+```
+
+// 1. Memanggil data
+var dataset = ee.Image('UMD/hansen/global_forest_change_2021_v1_9');
+
+// 2. Setting visualisasi
+var treeCoverVisParam = {
+  bands: ['treecover2000'],
+  min: 0,
+  max: 100,
+  palette: ['black', 'green']
+};
+
+// 3. Menampilkan data ke peta
+Map.addLayer(dataset, treeCoverVisParam, 'tree cover');
+```
+
 
 
 
