@@ -136,7 +136,7 @@ anda dapat menghitung luasan area hutan yang terkonversi menjadi non hutan pada 
 
 var luas = dataset.multiply(ee.Image.pixelArea()).reduceRegion({reducer: ee.Reducer.sum(),  geometry: adminMimika,  scale: 100,  maxPixels: 1e9});
 var luasE = ee.Number(luas.get('lossyear')).divide(1000000).round();
-print( aa = "Luas hutan terkonversi pada rentang tahun 2000 - 2020 di Mimika sebesar " + ': ' + luasE.getInfo() + " kmsqr")
+print("Luas hutan terkonversi pada rentang tahun 2000 - 2020 di Mimika sebesar " + ': ' + luasE.getInfo() + " kmsqr")
 ```
 
 maka akan muncul
