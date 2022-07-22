@@ -117,6 +117,13 @@ Area analisis bisa dispesifikkan pada batas administrasi tertentu dengan memangg
 var adminMimika = ee.FeatureCollection("projects/ee-masitamanessa-unodc/assets/MIMIKA_ADMINISTRASIKECAMATAN_AR_50K")
 ```
 
+atau bila ingin memilih kecamatan tertentu
+```
+var kecamatan = "Jita";
+var adminMimika = ee.FeatureCollection("projects/ee-masitamanessa-unodc/assets/MIMIKA_ADMINISTRASIKECAMATAN_AR_50K")
+                          .filter(ee.Filter.eq('NAMOBJ', kecamatan));
+ ```
+
 menampilkan data
 ```
 Map.addLayer(adminMimika)
