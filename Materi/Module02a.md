@@ -120,7 +120,7 @@ var adminMimika = ee.FeatureCollection("projects/ee-masitamanessa-unodc/assets/M
 menampilkan data
 ```
 Map.addLayer(adminMimika)
-Map.obejctCenter(adminMimika)
+Map.centerObject(adminMimika)
 ```
 
 
