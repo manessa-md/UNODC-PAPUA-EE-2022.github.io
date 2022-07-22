@@ -9,6 +9,14 @@ Data vektor merupakan tipe data yang umum ditemukan dalam SIG. Sebuah vektor pad
 Untuk data administrasi dari distrik atau kabupaten kota di Indonesia dapat diakses pada website:
 https://tanahair.indonesia.go.id/portal-web 
 
+## Data zip administrasi
+Setelah mendownload data dalam format zip, lakukan proses eksraksi. Pada satu file data vektor akan terdiri dari beragam informasi dari batas administrasi, jalan, area hutan, area pemukiman. 
+
+<img width="960" alt="RasterVector" src="https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Image/Mod03A/03a01.png"> 
+
+## upload data ke google earth engine 
+
+
 
 ## Data yang sudah tersedia
 Berikut ada beberapa data vektor spasial 
