@@ -166,7 +166,17 @@ Gambar 6. Tampilan Meta data citra
 
 
 
+#### Menampilkan text hitungan di Peta
 
+```
+// 5. Menampikan di peta
+var profilesOn = false; // status of analysis profiles
+// The layout is vertical flow by default.
+var panel = ui.Panel({style: {width: '600px',position: 'bottom-right'}})
+    .add(ui.Label("Luas hutan terkonversi pada rentang tahun 2000 - 2021 di " + kecamatan +  " sebesar " + ': ' + luasE.getInfo() + " kmsqr"));
+    Map.add(panel);
+    
+ ```
 
 
 
