@@ -1,7 +1,7 @@
 # PANDUAN DASAR GOOGLE EARTH ENGINE
 Module 2 Dasar Koding
 --------------
-
+## 2a. Mengenal Data dan Visualisasi Citra Sentinel-1 menggunakan Google Earth Engine 
 ### Memilih Citra
 
 Pemilihan citra bisa dilakukan dengan mencari pada tabel pencarian dengan memasukan _keyword_ nama citra satelit "Sentinel-2".
@@ -67,5 +67,12 @@ Map.addLayer(S2.first(), visualization, 'RGB');
 
 <img width="960" alt="Mod2-S2-05" src="https://user-images.githubusercontent.com/69818715/158046321-e8326070-d054-46bc-9505-95de5cf49336.png">
 Gambar 17. Tampilan Visualisasi Citra Sentinel-2
+
+## 2b. Mengenal Data dan Visualisasi Citra Forest Loss menggunakan Google Earth Engine 
+Pemilihan citra bisa dilakukan dengan mencari pada tabel pencarian dengan memasukan _keyword_ nama citra satelit "Forest Loss".
+
+<img width="960" alt="Mod2-S2-02" src="https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/main/Image/Mod03A/1_eQT7CXrsf0lm3HVxnww_WQ.png">
+Gambar 14. Tampilan Search Dataset Citra
+
 
 
