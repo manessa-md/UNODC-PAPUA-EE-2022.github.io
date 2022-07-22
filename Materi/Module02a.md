@@ -78,6 +78,7 @@ Gambar 5. Tampilan Search Dataset Citra
 
 ### Memahami Informasi Data Forest loss
 Informasi meta data dari data citra penginderaan jauh harus di pahami dengan baik sebelum menggunakannya:
+
 <img width="960" alt="Mod2-A-02" src="https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/349bd1eeb0c0dfc636db26d8e95dd3c7f562bfbf/Image/Mod03A/02A02.jpg">
 Gambar 5. Tampilan Meta data citra
 
