@@ -88,18 +88,21 @@ Berikut adalah script dasar untuk menampilkan data forest loss yang terdiri dari
 ```
 
 // 1. Memanggil data
-var dataset = ee.Image('UMD/hansen/global_forest_change_2021_v1_9');
+// 1. Memanggil data
+var dataset = ee.Image('UMD/hansen/global_forest_change_2021_v1_9')
+                .clip(adminMimika);
 
 // 2. Setting visualisasi
-var treeCoverVisParam = {
-  bands: ['treecover2000'],
+var treeLossVisParam = {
+  bands: ['lossyear'],
   min: 0,
-  max: 100,
-  palette: ['black', 'green']
+  max: 21,
+  palette: ['yellow', 'red']
 };
 
+
 // 3. Menampilkan data ke peta
-Map.addLayer(dataset, treeCoverVisParam, 'tree cover');
+Map.addLayer(dataset, treeLossVisParam, 'tree loss year');
 ```
 
 
@@ -120,6 +123,28 @@ dan memodifikasi script dengan menambahkan perintah ```.clip()``` dituliskan sec
 var dataset = ee.Image('UMD/hansen/global_forest_change_2021_v1_9')
                 .clip(adminMimika);
 ```
+setelah mengklik tombol **Run** maka tampilan di Code Editor GEE akan seperti ini
+
+<img width="960" alt="Mod2-A-02" src="https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/349bd1eeb0c0dfc636db26d8e95dd3c7f562bfbf/Image/Mod03A/02A03.jpg">
+Gambar 6. Tampilan Meta data citra
+
+#### Menghitung luasan area hutan terkonversi
+anda dapat menghitung luasan area hutan yang terkonversi menjadi non hutan pada kabupaten timika menggunanan code berikut
+
+```
+// 4. Mengetahui luasan area terkonversi
+
+var luas = dataset.multiply(ee.Image.pixelArea()).reduceRegion({reducer: ee.Reducer.sum(),  geometry: adminMimika,  scale: 100,  maxPixels: 1e9});
+var luasE = ee.Number(luas.get('lossyear')).divide(1000000).round();
+var aa = "Luas hutan terkonversi pada rentang tahun 2000 - 2020 di Mimika sebesar " + ': ' + luasE.getInfo() + " kmsqr"
+```
+
+maka akan muncul
+
+
+<img width="960" alt="Mod2-A-02" src="https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/349bd1eeb0c0dfc636db26d8e95dd3c7f562bfbf/Image/Mod03A/02A04.jpg">
+Gambar 6. Tampilan Meta data citra
+
 
 
 
