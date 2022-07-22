@@ -80,7 +80,7 @@ Gambar 5. Tampilan Search Dataset Citra
 Informasi meta data dari data citra penginderaan jauh harus di pahami dengan baik sebelum menggunakannya:
 
 <img width="960" alt="Mod2-A-02" src="https://github.com/manessa-md/UNODC-PAPUA-EE-2022.github.io/blob/349bd1eeb0c0dfc636db26d8e95dd3c7f562bfbf/Image/Mod03A/02A02.jpg">
-Gambar 5. Tampilan Meta data citra
+Gambar 6. Tampilan Meta data citra
 
 ### Menggunakan data forest loss
 Berikut adalah script dasar untuk menampilkan data forest loss yang terdiri dari tiga bagian: 
@@ -101,6 +101,27 @@ var treeCoverVisParam = {
 // 3. Menampilkan data ke peta
 Map.addLayer(dataset, treeCoverVisParam, 'tree cover');
 ```
+
+
+### Memilih data di area yang diinginkan 
+#### Menggunakan poligon 
+
+
+
+#### Menggunakan batas administrasi
+Area analisis bisa dispesifikkan pada batas administrasi tertentu dengan memanggil file vektor dari batas administrasi 
+```
+var adminMimika = ee.FeatureCollection("projects/ee-masitamanessa-unodc/assets/MIMIKA_ADMINISTRASIKECAMATAN_AR_50K")
+```
+
+dan memodifikasi script dengan menambahkan perintah ```.clip()``` dituliskan secara lengkap sebagai berikut
+```
+// 1. Memanggil data
+var dataset = ee.Image('UMD/hansen/global_forest_change_2021_v1_9')
+                .clip(adminMimika);
+```
+
+
 
 
 
