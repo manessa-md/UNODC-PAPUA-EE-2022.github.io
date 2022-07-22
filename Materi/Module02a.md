@@ -117,6 +117,13 @@ Area analisis bisa dispesifikkan pada batas administrasi tertentu dengan memangg
 var adminMimika = ee.FeatureCollection("projects/ee-masitamanessa-unodc/assets/MIMIKA_ADMINISTRASIKECAMATAN_AR_50K")
 ```
 
+menampilkan data
+```
+Map.addLayer(adminMimika)
+Map.obejctCenter(adminMimika)
+```
+
+
 dan memodifikasi script dengan menambahkan perintah ```.clip()``` dituliskan secara lengkap sebagai berikut
 ```
 // 1. Memanggil data
