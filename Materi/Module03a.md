@@ -14,6 +14,7 @@ https://tanahair.indonesia.go.id/portal-web
 Berikut ada beberapa data vektor spasial 
 
 ```
+
 var AdminMimika = ee.FeatureCollection ("https://code.earthengine.google.com/?asset=projects/ee-masitamanessa-unodc/assets/MIMIKA_ADMINISTRASIKECAMATAN_AR_50K");
 var HutanMimika = ee.FeatureCollection("https://code.earthengine.google.com/?asset=projects/ee-masitamanessa-unodc/assets/MIMIKA_NONAGRIHUTANBASAH_AR_50K")
 
