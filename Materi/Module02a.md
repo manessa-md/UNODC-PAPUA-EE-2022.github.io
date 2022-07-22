@@ -179,4 +179,5 @@ var panel = ui.Panel({style: {width: '600px',position: 'bottom-right'}})
  ```
 
 
-
+script keseluruhan dapat diakes pada link berikut:
+https://code.earthengine.google.com/73e8fda81758c1dc356b14b7930693d8 
